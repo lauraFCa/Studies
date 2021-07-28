@@ -1,6 +1,6 @@
 # Courses
 
-## **Learning Tracking with OpenCV**
+## Course **Learning Tracking with OpenCV**
 
 Curso: [Rastreamento de Objetos com Python e OpenCV](https://www.udemy.com/course/rastreamento-objetos-python-opencv/)
 
@@ -218,7 +218,7 @@ Maior movimento, mais intensa a cor (mais próximo);
 
 <br>
 
-## **Python na Prática**
+## Course **Python na Prática**
 
 ### Comandos no terminal
 
@@ -271,7 +271,7 @@ Saindo do Python - exit()
 
 <br>
 
-## **Django**
+## Course **Django**
 
 Comandos inicais/principais  
 django-admin startproject [nome-projeto]  
@@ -307,7 +307,7 @@ Quando herdo de models.Model, ja vem com managers padrão (operações de banco 
 
 <br>
 
-## **Reconhecimento com OpenCV**
+## Course **Reconhecimento com OpenCV**
 
 ### MODELOS DE DETECÇÃO DE POSICIONAMENTO
 
@@ -403,7 +403,7 @@ Modelo CAFFE prevê conjunto de campos vetoriais 2D de afinidades (PAF) que codi
 
 <br>
 
-## Processamento de Imagens
+## Course **Processamento de Imagens**
 
 Usando biblioteca Pillow
 
@@ -497,7 +497,7 @@ Value
 
 <br>
 
-## **Livro Introdução a Visão Computacional com Python e OpenCV**
+## Livro **Introdução a Visão Computacional com Python e OpenCV**
 
 [**Introdução a Visão Computacional com Python e OpenCV** - *Ricardo Antonello*](https://cv.antonello.com.br/wp-content/uploads/2017/02/Livro-Introdu%C3%A7%C3%A3o-a-Vis%C3%A3o-Computacional-com-Python-e-OpenCV-3.pdf)
 

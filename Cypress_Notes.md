@@ -1,7 +1,5 @@
 # Courses
 
-## Cursos
-
 docs.cypress.io (documentação completa)  
 **Assertiva:** o que garante que a ação resulta no comportamento esperado  
 Assertivas ficam sendo feitas até o Timeout (enquanto resultado não for positivo)

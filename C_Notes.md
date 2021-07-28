@@ -1,6 +1,6 @@
 # Courses
 
-## **Learning C#**
+## Course **Learning C#**
 
 **.NET** = library that works with several languages (just for microsoft plataforms)  
 **.NET Core** = multiplataform (windows, linux, mac)
@@ -55,6 +55,6 @@ Add $ in front of string
 
 <br>
 
-## **C++: Orientação a Objetos - Introdução**
+## Course **C++: Orientação a Objetos - Introdução**
 
 //TODO

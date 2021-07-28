@@ -1,6 +1,6 @@
 # Courses
 
-## **Agile Testing**
+## Course **Agile Testing**
 
 Validating and verifying each step in developing  
 Interactive, self-organizing process  
@@ -120,7 +120,7 @@ Smaller iterations can lead to earlier status updates
 
 <br>
 
-## **Behavior Driven Development (BDD)**
+## Course **Behavior Driven Development (BDD)**
 
 Agile is an approach that highlights BDD  
 Using Cucumber (navegating comand lines) and Ruby  
@@ -268,7 +268,7 @@ Create steps.rb file, inside step_definitions directory
 
 <br>
 
-## **Insights on Software Quality Engineering**
+## Course **Insights on Software Quality Engineering**
 
 ### QA
 Be able to break down a problem, and think about the most efficient ways to come to a solution  
@@ -294,5 +294,6 @@ Its easier to send a hot fix, and address the problem;
 
 <br>
 
-## **Introdução ao Teste de Software**
+## Course **Introdução ao Teste de Software**
 
+//TODO Couse in progress

@@ -1,6 +1,6 @@
 # Couses
 
-## **API Testing Foundation**
+## Course **API Testing Foundation**
 
 [Original Course GitHub](https://github.com/djwester/api-testing-foundations.git)
 [NPM download](https://npmjs.com/get-npm)
@@ -108,7 +108,7 @@ https://github.com/DannyDainton/All-Things-Postman
   
 <br>
   
-## **Learning REST APIs**
+## Course **Learning REST APIs**
 
 ### **Módulo 01**
 
@@ -242,7 +242,7 @@ To delete completely, not just put on trash, use ?force=true (WORDPRESS EXEMPLE)
   
 <br>
   
-## **Introduction to Web APIs**
+## Course **Introduction to Web APIs**
 
 **Aplication Programming Interface - API**
 
@@ -299,7 +299,7 @@ request.onerror = a way to deal with errors
   
 <br>
 
-## **API REST Youtube Course**
+## Course **API REST Youtube Course**
 
 **API = Application Programming Interface**  
 Interface de programação de aplicações, com objetivo de expor um serviço sem que as pessoas que consomem o serviço conheçam sua estrutura (conceito de caixa preta)  
