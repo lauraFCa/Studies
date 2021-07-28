@@ -76,7 +76,7 @@ Mais rápido que MIL e Boosting (propriedades matemáticas tornam rápido e
 preciso).  
 Depois de você selecionar o ROI, o algoritimo inicializa o filtro de partículas, e 
 gera mais 2 filtros criando 2 novas bounding boxes (externas ao ROI).
-![Algoritmo KCF](kcf_algorith.png)
+![Algoritmo KCF](imgs\kcf_algorith.png)
 Nos frames seguintes atualiza estes filtros, ajustando para contornar melhor o 
 objeto, ajustando a mudanças de escala.
 
@@ -191,7 +191,7 @@ H: Matiz, indica direção do movimento do pixel;
 S: Saturação, indica velocidade dos pixels (de um frame a outro);  
 V: Intensidade menor quando o deslocamento é menor (menor saturação)  
 
-![Optical Flow - Sparce](opticalFlow_Sparce.png)
+![Optical Flow - Sparce](imgs\opticalFlow_Sparce.png)
 *Não analisa imagem pixel a pixel.*
 
 Algoritmo:

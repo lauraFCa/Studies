@@ -353,7 +353,7 @@ Postman/interface -> controller -> service -> repository -> BD
 
 Método GET: Não altera nada no servidor (apenas uma busca) - método SAFE (retorna um statusCode)  
 
-![Fluxo do Controller](fluxo.png)
+![Fluxo do Controller](imgs\fluxo.png)
 
 Crio um controlador, que vai estar disponível via HTTP (de maneira remota) para que pessoas autenticadas e autorizadas possam realizar uma requisição e então ter acesso.  
 REQUESTS E RESPONSES  
