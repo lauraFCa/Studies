@@ -44,6 +44,7 @@ Courses files and notes
 - Linkedin Learning Course: [Behavior Driven Development](https://www.linkedin.com/learning/behavior-driven-development/)
 - Linkedin Learning Course: [Agile Testing](https://www.linkedin.com/learning/agile-testing-2/)
 - Linkedin Learning Course: [Insights on Software Quality Engineering](https://www.linkedin.com/learning/insights-on-software-quality-engineering/)
+- Coursera Course: [Introdução ao Teste de Software](https://www.coursera.org/learn/intro-teste-de-software)
 
 ## Selenium
 
