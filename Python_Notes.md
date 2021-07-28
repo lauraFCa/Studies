@@ -220,6 +220,8 @@ Maior movimento, mais intensa a cor (mais próximo);
 
 ## Course **Python na Prática**
 
+Canal do Youtube: [Programação Dinâmica](https://www.youtube.com/c/Programa%C3%A7%C3%A3oDin%C3%A2mica)  
+
 ### Comandos no terminal
 
 Pasta atual: pwd (print work directory)  
@@ -404,6 +406,8 @@ Modelo CAFFE prevê conjunto de campos vetoriais 2D de afinidades (PAF) que codi
 <br>
 
 ## Course **Processamento de Imagens**
+
+Playlista do Youtube Programação Dinâmica: [Processamento de Imagens](https://www.youtube.com/playlist?list=PL5TJqBvpXQv54i_HWjd7s70vbP4Is7sK_)
 
 Usando biblioteca Pillow
 
