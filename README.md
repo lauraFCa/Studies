@@ -1,5 +1,5 @@
-# Notes on Learned Topics
-
+# Studies
+Some study notes and materials from different topics I've dabbled in.  
 Courses taken on [Linkedin Learning](https://www.linkedin.com/learning/) and [Udemy](https://www.udemy.com/)
 
 ## APIs
