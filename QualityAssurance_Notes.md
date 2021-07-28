@@ -296,6 +296,10 @@ Its easier to send a hot fix, and address the problem;
 
 ## Course **Introdução ao Teste de Software**
 
+### História do Teste de Software  
 
+Diferença entre *tirar defeitos* e *testar software*  
+
+`"O teste mostra presença, não ausência de erros"`
 
 //TODO Couse in progress
