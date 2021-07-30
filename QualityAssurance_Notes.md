@@ -302,4 +302,51 @@ Diferença entre *tirar defeitos* e *testar software*
 
 `"O teste mostra presença, não ausência de erros"`
 
-//TODO Couse in progress
+> 20/02 Dia Internacional do Teste de Software
+
+A atividade de *testes* é necessária porque humanos podem cometer erros.  
+Esses erros podem ocorrerr devido a:
+
+- complexidade do software desenvolvido, 
+- mudanças necessárias em software já existente e que pode levar a novas falhas, 
+- falta de uso de  métodos que apoiem a validação e verificação da qualidade do software, 
+- situações imprevisíveis, 
+- questões pessoais e do próprio ambiente de trabalho e que interferem no desempenho do testador
+
+**O teste é requerido para revelar a presença de defeitos, aumentar a confiança e satisfação do cliente com o software, e assegurar a qualidade do produto.**
+
+É essencial prever ou garantir que falhas não ocorram, ou que *pelo menos sejam minimizadas* ou identificadas o quanto antes.
+
+### TMMI (Test Maturity Model integration)
+
+Guia e framework para apoiar a melhoria de processos de teste (criando níveis).  
+Estabelece requisitos necessários para que se tenha um processo de teste com qualidade.  
+> Assim como CMMI - Modelo de maturidade de software.  
+  
+1. **Nível 1**  
+  Nível caótico, todos os processos de teste estão aqui, e não requer que qualquer coisa seja contemplada.
+2. **Nível 2**  
+  Gerenciado, possui estratégia, planejamento, monitoramento, controle, projeto, execução e ambiente de teste.
+3. **Nível 3**  
+  Definido, possui organização, programa de treinamento, ciclo de vida e integração, teste não funcional e revisão por partes.
+4. **Nível 4**  
+  Gerenciamento quantitativo, medição de teste e avaliação e revisão avançada da qualidade do software.
+5. **Nível 5**  
+  Em otimização, o processo já tem muita qualidade e o objetivo é manter a qualidade e evluir constantemente.
+
+Os requisitos para o processo de qualidade são chamados de ***áreas de processo***.  
+
+Cada uma contém *objetivos específicos*, *práticas específicas*, *subpráticas*, e *objetivos genéricos* e *práticas genéricas*.
+
+Objetivos específicos são requeridos de serem alcançados.  
+Práticas específicas são coisas que são esperadas que se faça para que os objetivos sejam alcançados e a subpráticas são mais de caráter informativo.  
+
+Objetivos genéricos e práticas genéricas, são comuns a várias áreas de processo.  
+Descrevem características que podem ser utilizadas para institucionalizar o processo de teste dentro da organização.
+
+
+
+Referências: 
+- [Identifying a Subset of TMMi Practices to Establish a Streamlined Software Testing Process](https://ieeexplore.ieee.org/document/6800190)
+- [Elaboração de um processo de teste com base em um estudo de caso real](https://repositorio.ufscar.br/handle/ufscar/519)
+- [Characterising the state of the practice in software testing through a TMMi-based process](https://jserd.springeropen.com/articles/10.1186/s40411-015-0019-9)
