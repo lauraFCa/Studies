@@ -242,7 +242,7 @@ To switch windows I declare a handle for the orinal one, and then create a for l
 After the for loop we go back to the original handle (first window).
 
 **Alerts** can be used by imorting the *Alert* class.  
-Then you can switch to the alert, and accept the alert.
+Then you can switch to the alert, and accept() the alert.
   
 **JavaScript** commands may be needed in tests.
 
@@ -264,3 +264,63 @@ Using "Drag and Drop"
 
 > Actions actions = new Action(driver)  
 actions.dragAndDrop(elementoPraArrastar, caixaRecebeElemento).build().perform()  
+
+<br>
+
+**Advaced Locators**  
+ClassName, CSS Selector, Name, Tag name, ID, Link text, XPath  
+Best locators: **Unique, Descriptive, Static** (unlikely to change)  
+Usually avoided:
+
+- Link text: wirk as longs as links are unique on a page
+- Tag name: usually not unique and not descriptive
+- XPath: definetly not descriptive
+
+Prefer using:
+
+- ID (#id)
+- Class (.class)
+- Name ( By.cssSelector("input[name='nome']") )
+- **CSS Selector**  
+    Can be used with all the olher locators  
+    Most powerfull choice for automation  
+    Great for "hard to find" elements
+
+CSS Selector is also great for:
+
+- Find based on substring or string
+- Using wildcards
+- Child and sibiling nodes
+
+Combinations of CSS Selector: (when a page has more elements)
+
+- Tag and Class  
+  By.cssSelector("input.classe"])
+- Tag and ID  
+  By.cssSelector("input#id"])
+- Tag and Attribute  
+  By.cssSelector("input[type='radio']")  
+  By.cssSelector("input[value='radio button']")
+- Class and Class  
+  By.cssSelector(".btn.btn-lg.btn-success")  
+  (pilha de classes)
+
+Using Text Matching: best way is to use **Value** (exact value of selector)  
+Wildcard matches text based on a selector or *part of a selector*.  
+
+By Value: *BycssSelector( "<tagname>[type='<value>']" )*
+By Wildcard: Matching by String or Substring
+
+- **Prefix:** *BycssSelector( "a[id^='id_prefix_']" )*  
+  By.cssSelector( "div[id^='textFieldID']" )
+- **Suffix:** *BycssSelector( "a[id$='textFieldID']" )*  
+  By.cssSelector( "div[id$='id_sufix_']" )
+- **Substring:** *BycssSelector( "a[id*='id_pattern']" )*  
+  By.cssSelector( "div[id*='textFieldID']" )
+- **Exact match:** *BycssSelector( "a[id='id']" )*  
+  By.cssSelector( "div[id='textFieldID']" )
+
+Finding Child Nodes:  
+" div#parent a "  
+Finding Nth-Child:  
+" #list li:nth-child(n) "  
