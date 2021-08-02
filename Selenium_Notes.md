@@ -218,7 +218,7 @@ Finding an element on the page:
 - By. Name
 - By.Xpath
 
-#### Tools with WebDriver
+### Tools with WebDriver
 
 Use **autocomplete**, with Google Places API.
 
@@ -264,3 +264,164 @@ Using "Drag and Drop"
 
 > Actions actions = new Action(driver)  
 actions.dragAndDrop(elementoPraArrastar, caixaRecebeElemento).build().perform()  
+
+Som common components: **Radio buttons**, **Checkboxes**, **Date pickers**, **Dropdoen menus** and **File uploads**  
+
+**Radio Buttons** and/or **Checkboxes**: different strategies to automate:
+
+- Based on ID
+- Based on value - By.cssSelector(" *input[value='valor']* ")
+- Using XPath - right click on element > copy > copy XPath  
+  By.xPath("copied xpath")
+
+**Datepicker**: clicking on the field, a datepicker (calendar) opens, with today's date highlighted.  
+When I hover the mouse on other dates they're also highlighted.  
+Once I select a date the datepicker (calendar) closes, and the field is populated with the clicked date.  
+Automation options: 
+
+- Open the datepicker and select the date
+- Populate the field (input) manually  
+  element.*sendKeys("a data no formato correto")*  
+  Must close the dateFiled = press enter  
+    - sendKeys(Keys.RETURN)
+
+**Dropdown**: Click the dropdown, click on a component from the dropdown  
+Find the dropdown and click on it - element.click()  
+Define the desired dropped down item, and clikck on it
+
+**File upload**: To chose a file, with an input I can send the file name fully to the field (find the input and send keys).
+
+**Synchronization Issues** (test *speed*)
+
+- Page to load
+- Action to finish
+- Components to appear
+
+1. Brownsers work on different speeds  
+Chromedriver and geckdriver are fster
+2. The more tests are executed there's a discrepancy between runnig:
+    - Locally
+    - Remotally
+3. Network speed
+
+**Implicit Wait**: waits an amount of time untill throwing a "no such element" exception (default time is zero)
+
+- *PROS:*  
+  Easy to implement  
+  Non-intrusive  
+  Can be apllied to all elements in a script (not just one)
+- *CONS:*  
+  Coud take unnecessary time (wait when don't need)
+
+> Doesn't depend on elements, just time  
+> **Can take the *InterruptedException* out**
+
+driver.manage().timeouts().*implicityWait(TimeOut, TimeUnit.SECONDS)*
+
+**Explicit Wait**: waits an amount of time untill a condition is met  
+If is not met, throws an exception
+
+- *PROS:*  
+  Is intelligent  
+  Better options than implicit (more flexibility)  
+  Waits for dinamically located elements
+- *CONS:*  
+  Coud take unnecessary time (wait when don't need)
+
+> Doesn't
+
+WebDriverWait wait = new WebDriverWait(driver, 10); //seconds
+WebElement element = wait.until( ExpectedConditions.visibilityOfElementLocated(By.id("idElemento)) );
+
+### Automating a Webpage
+
+Filling a form with: inputs, radio buttons, check boxes, dropdowns and date pickers, with a submit button.  
+
+#### General code
+
+System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
+
+> WebDriver driver = new ChromeDriver();  
+driver.get("https://formy-project.herokuapp.com/form");  
+
+>//field First Name  
+driver.findElement(By.id("first-name")).sendKeys("John");  
+//field Last Name  
+driver.findElement(By.id("last-name")).sendKeys("Doe");  
+//field Job title  
+driver.findElement(By.id("job-title")).sendKeys("QA Engineer");  
+//field Education level  
+driver.findElement(By.id("radio-button-2")).click();  
+//field Sex  
+driver.findElement(By.id("checkbox-2")).click();  
+//field Years of experience  
+driver.findElement(By.cssSelector("option[value='1']")).click();  
+//field Date 
+driver.findElement(By.id("datepicker")).sendKeys("05/28/2019");  
+driver.findElement(By.id("datepicker")).sendKeys(Keys.RETURN);  
+//button Submit  
+driver.findElement(By.cssSelector(".btn.btn-lg.btn-primary")).click();  
+
+>//Assertion of the success  
+//Wait for the new page to appear
+WebDriverWait wait = new WebDriverWait(driver, 10);  
+WebElement alert = wait.until((ExpectedConditions.visibilityOfElementLocated(By.className("alert"))));  
+//Create assertion  
+//Text displayed is equal to text expected  
+String alertText = alert.getText();  
+assertEquals("The form was successfully submitted!");
+
+>driver.quit();
+
+<br>
+
+#### **Cleaned up code**
+
+    public static void main(String[] args) {
+
+        System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
+
+        WebDriver driver = new ChromeDriver();
+
+        driver.get("https://formy-project.herokuapp.com/form");
+
+        submitForm(driver);
+
+        waitForAlertBanner(driver);
+
+        assertEquals("The form was successfully submitted!", getAlertBannerText(driver));
+
+        driver.quit();
+    }
+
+    public static void submitForm(WebDriver driver)
+    {
+        driver.findElement(By.id("first-name")).sendKeys("John");
+
+        driver.findElement(By.id("last-name")).sendKeys("Doe");
+
+        driver.findElement(By.id("job-title")).sendKeys("QA Engineer");
+
+        driver.findElement(By.id("radio-button-2")).click();
+
+        driver.findElement(By.id("checkbox-2")).click();
+
+        driver.findElement(By.cssSelector("option[value='1']")).click();
+
+        driver.findElement(By.id("datepicker")).sendKeys("05/28/2019");
+        driver.findElement(By.id("datepicker")).sendKeys(Keys.RETURN);
+
+        driver.findElement(By.cssSelector(".btn.btn-lg.btn-primary")).click();
+    }
+
+    public static void waitForAlertBanner(WebDriver driver)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until((ExpectedConditions.visibilityOfElementLocated(By.className("alert"))));
+    }
+
+    public static String getAlertBannerText(WebDriver driver)
+    {
+        return driver.findElement(By.className("alert")).getText();
+    }
+
