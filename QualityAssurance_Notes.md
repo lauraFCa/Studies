@@ -2,6 +2,8 @@
 
 ## Course **Agile Testing**
 
+[Linkedin Learning Course](https://www.linkedin.com/learning/agile-testing-2)
+
 Validating and verifying each step in developing  
 Interactive, self-organizing process
 
@@ -125,6 +127,8 @@ Smaller iterations can lead to earlier status updates
 <br>
 
 ## Course **Behavior Driven Development (BDD)**
+
+[Linkedin Learning Course](https://www.linkedin.com/learning/behavior-driven-development)
 
 Agile is an approach that highlights BDD  
 Using Cucumber (navegating comand lines) and Ruby
@@ -277,6 +281,8 @@ Create steps.rb file, inside step_definitions directory
 
 ## Course **Insights on Software Quality Engineering**
 
+[Linkedin Learning Course](https://www.linkedin.com/learning/insights-on-software-quality-engineering)
+
 ### QA
 
 Be able to break down a problem, and think about the most efficient ways to come to a solution  
@@ -304,6 +310,8 @@ Its easier to send a hot fix, and address the problem;
 <br>
 
 ## Course **Introdução ao Teste de Software**
+
+[Coursera Course](https://www.coursera.org/learn/intro-teste-de-software)
 
 ### História do Teste de Software
 
@@ -384,9 +392,9 @@ Além disso também deve saber priorizar casos de teste e bugs para que o softwa
 
 > Não existem produtos de qualidade, existem processos com qualidade!
 
-### Mapa Conceitual de Teste de Software
+<!-- ### Mapa Conceitual de Teste de Software
 
-![Teste de Software](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/JQmZ_6SjEeesIgqlslw-IA_879eb74415eff3980e869ed729ac40b7_bf7591e0a4a211e78d872d02aebbf8f7.map.jpg?expiry=1627948800000&hmac=nBT_mnY823kgCpNc2NKq2M8EH8ghForqRNZpKW89Q9k)
+![Teste de Software](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/JQmZ_6SjEeesIgqlslw-IA_879eb74415eff3980e869ed729ac40b7_bf7591e0a4a211e78d872d02aebbf8f7.map.jpg?expiry=1627948800000&hmac=nBT_mnY823kgCpNc2NKq2M8EH8ghForqRNZpKW89Q9k) -->
 
 ### Terminologia da Área
 

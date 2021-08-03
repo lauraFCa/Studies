@@ -337,7 +337,7 @@ WebElement element = wait.until( ExpectedConditions.visibilityOfElementLocated(B
 
 Filling a form with: inputs, radio buttons, check boxes, dropdowns and date pickers, with a submit button.  
 
-#### General code
+#### **General code**
 
 System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
 
@@ -377,7 +377,10 @@ assertEquals("The form was successfully submitted!");
 
 #### **Cleaned up code**
 
-    public static void main(String[] args) {
+Using **Page Objects** to separate functionalities into different classes.  
+Organize test code and keep it clean.
+
+      public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
 
@@ -425,3 +428,59 @@ assertEquals("The form was successfully submitted!");
         return driver.findElement(By.className("alert")).getText();
     }
 
+Note: WebElements DO NOT need to be explicitly defined before using them in tests.
+
+<br>
+
+### Project Integration
+
+Connect it to *GitHub*, or any other source control repository.  
+
+- Keeps project on web, not depending on one machine
+- Allows for collaboratory work
+- Helps to allow further integrations with the WebDriver project
+
+Setup a ***Continuous Integration*** server, to run tests everytime the code changes.
+**Selenium Grid** is a server that routes commands to remote browsers.  
+
+- It spreads the load of tests across several machines, and they run in different brownsers, versions and plataforms.
+- **Hub** is where tests are executed. It accesses **nodes**.  
+- **Nodes** are where the tests are *run*, being individual Selenium instances.
+
+> To use Selenium Grid is required Selenium Standalone Server  
+Download: _selenium-server-standalone-3.141.59.jar_  
+Run: _java -jar selenium-server-standalone-3.141.59.jar -role hub_  
+Go to: [address]/grid/console
+
+> Configure the Node: java -jar selenium-server-standalone-3.141.59.jar -role node -hub [address]  
+Register a new server: [address]/grid/register  
+OBS: I can customize the Node on the "Customize" tab  
+The port will change for each node running
+
+- Must maintain the grid infraestructure
+- Choose physical or virtual machines
+
+Continuous integration provides constant feedback about the tests and application funcionality.  
+Some continuous integration servers (that work with Selenium)
+
+- Circle CI: up to 16 parallel builds
+- Jenkins: open source, but require some expertise to set up
+- TeamCity: from JetBrain, great for enterprises
+- Travis CI: one of the oldest, free for open-source projects (hosted on github) and for the first 100 builds.
+
+To choose a CI Server you should look into:
+
+- Infraestructure cost
+- Ease of Setup
+- Mainteinance needs
+- Flexibility to run tests
+
+**Cloud-based test tools**:
+
+- Allow for hundreds of thousands of combinations of cross-browser, cross-device, and cross-platform testing
+- Alternative to using your own Selenium Grid, so you don't have to maintain it yourself
+- Virtual machines can be turned on demand with all specifications, run test, and then shut down.
+
+Suggestion: Sauce Labs, easy to set up with great support.  
+Supports all major programming languages. Allows for real device testing in addition to using emulators.  
+It is also a great option to run Selenium test and integrates well with major CI servers.
