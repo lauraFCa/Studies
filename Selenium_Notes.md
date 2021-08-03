@@ -485,7 +485,7 @@ To choose a CI Server you should look into:
 Suggestion: Sauce Labs, easy to set up with great support.  
 Supports all major programming languages. Allows for real device testing in addition to using emulators.  
 It is also a great option to run Selenium test and integrates well with major CI servers.
-=======
+
 <br>
 
 **Advaced Locators**  
