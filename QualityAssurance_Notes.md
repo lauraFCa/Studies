@@ -666,3 +666,103 @@ Desvantagens:
 Permite testes funcionais, de regressão e desempenho, e é *opensource*  
 Permite integração com várias linguagens e frameworks  
 OBS: Caso de teste não é salvo isoladamente, **necessário salvar a Suite de Testes**
+
+### Testes Estruturais
+
+Tem como objetivo garantir que todas as estruturas que compoe o programa estão funcionando.  
+Usa o código do programa para definir os requisitos de teste, e com eles os casos de teste.
+
+**Abstração da estrutura do programa**: Grafo de Fluxo de Controle  
+
+![Exemplo de grafo](https://slideplayer.com.br/slide/3688953/12/images/49/Grafo+de+fluxo+de+controle%3A+Exemplo.jpg)
+
+Critérios baseados em *Fluxo de Cotrole*: escolher casos te deste que exercitem todos os elementos do grafo
+
+- Critérios "Todos-nós"  
+Casos de teste que fazem com que todos os nós do fluxo sejam executados (pelo menos uma vez)  
+Defino entradas para o programa de forma que passe por todos os nós  
+**Teste de cobertura de comandos**
+- Critério "Todos-arcos"  
+Casos de teste que fazem com que todos as arestas (linhas) sejam executados (pelo menos uma vez)  
+**Cobertura de ramos/desvios**
+
+*Pode-se ignorar requisitos não-executáveis*
+
+Critérios baseados no *Fluxo de Dados*: além do grafo utilizam informações sobre a utilização de variáveis dentro da função.
+
+Defnição de váriavel = ponto em que ela recebe um valor  
+Uso da variável = ponto em que é utilizada, em um cálculo (associada a nó do grafo) ou condição (associada a aresta do grafo)
+
+Identificando os usos e as definições das variáveis, temos como requisitos de teste, o que chamamos de associações, definição e uso;  
+**Temos que encontrar um dado de teste que faça com que a execução passe pelo nó e alcance a aresta desesjada, sem que haja uma *redefinição* dessa variável**
+
+Resumo geral - Critérios de Teste Estrutural
+
+- Requisitos não executáveis
+- Exercitar código
+- Fluxo de controle: usa apenas GFC
+- Fluxo de dados: usa GFC + variáveis
+- Todos-nós
+- Todos-arcos
+
+Programa:
+
+      int validateIdentifier(char* s) { 
+
+      char achar; 
+
+      int i, valid_id = FALSE; 
+
+      if (strlen(s) > 0) { 
+
+          achar = s[0]; 
+
+          valid_id = valid_s(achar); 
+
+          if (strlen(s) > 1) { 
+
+            achar = s[1]; 
+
+            i = 1; 
+
+            while (i < strlen(s)) { 
+
+                achar = s[i]; 
+
+                if (!valid_f(achar)) 
+
+                  valid_id = FALSE; 
+
+                i++; 
+
+            } 
+
+          } 
+
+      } 
+
+      if (valid_id && (strlen(s) >= 1) && (strlen(s) < 6)) 
+
+          return TRUE; 
+
+      else 
+
+          return FALSE; 
+
+Ferramenta de apoio: Informam quais requisitos já foram executados e quais ainda faltam.
+
+- [JaBUTi](http://www2.ccsl.icmc.usp.br/pt-br/projects/jabuti)
+- [Eclemma](http://www.eclemma.org/)
+- [Cobertura(http://cobertura.github.io/cobertura/)]
+- [gcc/gcov/gcover](http://gcovr.com/)
+
+*GCC - GNU Compiler Colection:* Código é compilado para colheta de informações.  
+Executando o código é possível saber quais trechos foram executados.  
+Cria arquivo < nomeDoPrograma >.gcno que descreve o grafo de fluxo de controle do programa.  
+GCOVER recebe estes arquivos e gera um html com as informações (métricas) de cobertura, comandos (nós) e desvios do programa.
+
+>GCC – GNU COMPILER COLLECTION - Comandos para compilar:
+gcc -fprofile-arcs -ftest-coverage identifier.c -o identifier  
+identifier.c identifier.gcno  
+GCOVR - Visualizar o resultado  
+gcovr -r . --branches --html --html-details -o identifier.html
