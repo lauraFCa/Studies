@@ -761,7 +761,7 @@ Executando o código é possível saber quais trechos foram executados.
 Cria arquivo < nomeDoPrograma >.gcno que descreve o grafo de fluxo de controle do programa.  
 GCOVER recebe estes arquivos e gera um html com as informações (métricas) de cobertura, comandos (nós) e desvios do programa.
 
->GCC – GNU COMPILER COLLECTION - Comandos para compilar:
+>GCC – GNU COMPILER COLLECTION - Comandos para compilar:  
 gcc -fprofile-arcs -ftest-coverage identifier.c -o identifier  
 identifier.c identifier.gcno  
 GCOVR - Visualizar o resultado  
