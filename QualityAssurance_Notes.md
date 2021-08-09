@@ -766,3 +766,57 @@ gcc -fprofile-arcs -ftest-coverage identifier.c -o identifier
 identifier.c identifier.gcno  
 GCOVR - Visualizar o resultado  
 gcovr -r . --branches --html --html-details -o identifier.html
+
+### Testes de Mutação
+
+Utiliza conhecimento sobre os defeitos típicos que podem ocorrer no programa para criar bons conjuntos de testes.  
+Criamos vários programas que chamamos de **mutantes**  
+  - possuem pequenas modificações relação ao programa original
+
+Os casos de teste têm que para cada um dos mutantes o sistema apresenta resultado incorreto.  
+
+*Avaliar os Casos de Teste*: Contar quantos mutantes conseguem ser eliminados  
+Score de mutação = (mutantes mortos) / (total de mutantes)  
+(taxa de mutantes mortos)
+
+**Operadores de mutação:** Regras que definem as alterações necessárias para que mutantes sejam criados.  
+Relacionam com a linguagem na qual o programa foi escrito. Exemplo da linguagem C:
+- aquele que alteram comandos inteiros do programa
+- aqueles que alteram operadores da linguagem
+- que alteram variáveis e que alteram constantes
+
+**Se usarmos todos os operadores de mutação o número de mutantes tende a ser muito grande**  
+
+*Operador ORRN:* faz a troca de operador relacional por outro operador relacional (exemplo trocar > por <, ou = por !=).  
+Para cada 1 operador, cria-se 5 mutantes (total de 6 operadores)  
+>Operadores: >  <  >=  <=  =  !=  
+
+Quando o resultado do mutante é diferente do resultado original (esperado), considera-se o mutante morto.
+
+**Mutantes Equivalentes:** aqueles que não podem ser mortos (são descartados)  
+Score de mutação = (mutantes mortos) / (total de mutantes - mutantes equivalentes)
+
+Esquemático:  
+![Testes de Mutação](https://arquivo.devmedia.com.br/revistas/es/imagens/51/07_mutacao/image001.png)  
+<br>
+
+**Proteum**: [ferramenta](http://www2.ccsl.icmc.usp.br/pt-br/projects/proteum) que dá suporte a teste de mutação para linguagem C  
+Programa recebe como argumento String e precisa dizer se é identificador válido ou inválido.  
+Identificador válido tem até seis caracteres e todos eles devem ser letras ou dígitos. E o primeiro caractere deve ser uma letra.
+
+Testar função que valida o caracter para o identificador  
+1. Criar sessão de testes
+2. Selecionar funções do programa a serem testadas
+3. Selecionar operadores que serão usados (ORRN)
+    - Posso selecionar a porcentagem de mutantes que será gerada
+4. Adicionar casos de teste para tentar matar os mutantes
+5. Executo os mutantes e verifico se foram mortos
+    - Analiso mutantes que não foram mortos e crio novos casos
+6. Posso gerar mais mutantes
+
+Outras ferramentas:
+
+- [MuJava](https://cs.gmu.edu/~offutt/mujava/)
+- [Major](http://mutation-testing.org/)
+- [Pitest](http://pitest.org/)
+Se você gerar todos os mutantes, para todas as funções do programa identifier (1245 mutantes) e adicionar os 7 casos de teste do vídeo, quantos mutantes serão mortos e qual será o escore de mutação obtido (sem marcar mutantes equivalentes)?    
