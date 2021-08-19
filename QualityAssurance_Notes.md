@@ -309,6 +309,25 @@ Its easier to send a hot fix, and address the problem;
 
 <br>
 
+## Notes **Automatização de Testes**
+
+[Os 15 Erros mais Comuns na Automatização de Testes](https://www.youtube.com/watch?v=k4egg4trjgc&ab_channel=Pagar.meTalks)  
+
+- Suportar testes (ao invés de replicar testes)  
+Não apenas copiar e modificar testes que já existem (repassando erros)
+- Testabilidade (testes também são códigos - precisam ser testados)
+- Focar na experiencia do usuário (não a codificação)
+- Problemas ao invés de ferramentas (definir o problema para depois ver se é necessaria/qual ferramenta)
+- Foco no risco ao invés de cobertura (garantir que as partes mais criticas estão cobertas)
+- Observabilidade, facilitando rastreio de falhas de teste
+
+Testes deven avisar impactos e alterações de fluxo.
+
+Armadilhas na automação de testes:
+1. Testar tudo em apenas uma camada  
+
+2. X
+
 ## Course **Introdução ao Teste de Software**
 
 [Coursera Course](https://www.coursera.org/learn/intro-teste-de-software)
