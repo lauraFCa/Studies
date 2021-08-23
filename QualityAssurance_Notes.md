@@ -839,3 +839,33 @@ Outras ferramentas:
 - [Major](http://mutation-testing.org/)
 - [Pitest](http://pitest.org/)
 Se você gerar todos os mutantes, para todas as funções do programa identifier (1245 mutantes) e adicionar os 7 casos de teste do vídeo, quantos mutantes serão mortos e qual será o escore de mutação obtido (sem marcar mutantes equivalentes)?    
+
+
+### Depoimento de QA
+
+Depois da reunião de planejamento, começar a escrever os cenários de teste utilizando a metodologia BDD e a linguagem Gherkin.  
+Para ler esses cenários de teste utilizar Python e Selenium, frameworks mais utilizados hoje dia para testes de automação.  
+
+Para novas features: sempre realizar teste de sanidade automatizado - garante que as funcionalidades passadas do sistema não foram quebradas por essa nova funcionalidade;
+A nova feature é testada manualmente;
+
+Existem três tipos base para a realização dos testes: teste de **mutações**, os testes **estruturais** e os testes **funcionais**  
+O teste de **mutação** nada mais é do que validar os testes no código.  
+Realiza mutações cima dos testes e, *caso o teste passe o mutante esta vivo*. Quer dizer que os **testes estão frágeis**  
+Caso o mutante esteja morto os testes falharam, o que é o correto.  
+
+Testes estruturais são os testes caixa branca, que testam a parte interna do sistema, ou seja, o nosso código-fonte:
+
+- Testes de stress;
+- Testes de carga;
+- Testes de unidade;
+- Testes de comportamento;
+- Testes de integração;
+
+Tem então os testes Funcionais, do tipo caixa preta. Utiliza partes visuais, que o usuário vai usar.  
+Entender como a aplicação está se comportando e como deveria se comportar com base nas especificações e requisitos dados.
+
+- Testes de regressão, que vão testar basicamente o que já existia;
+- Testes de fumaça, que vão testar o core do sistema, ou seja, o intuito principal da nossa aplicação;
+- Teste de aceite, que é o teste baseado requisitos, ou seja, o valor que o cliente colocou cima da aplicação;
+- Testes automatizados que basicamente testa toda a parte visual, pensando que os outros testes já tenham sido realizados.
