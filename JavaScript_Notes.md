@@ -1,6 +1,8 @@
 # Courses
 
-## Course **JavaScript for QA**
+## Course **JavaScript for QA Engineers and SDETs**
+
+[Udemy Course](https://www.udemy.com/course/javascript-for-qa-engineers-and-sdets)
 
 Definindo variável:  
 var nome_variavel  
@@ -22,6 +24,8 @@ linhas */
 <br>
 
 ## Course **JavaScript Essencial Training**
+
+[Linkedin Learning Course](https://www.linkedin.com/learning/javascript-essential-training)
 
 **JavaScript: A scripting language for the web.**  
 EVENTS (DOM = Document Object Model)  

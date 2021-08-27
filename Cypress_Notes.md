@@ -1,20 +1,22 @@
 # Courses
 
+## General Notes 
+
 docs.cypress.io (documentação completa)  
+Cypress framework de testes automatizados  
+
 **Assertiva:** o que garante que a ação resulta no comportamento esperado  
 Assertivas ficam sendo feitas até o Timeout (enquanto resultado não for positivo)
 
 JQUERY selector: se quero pegar elemento pela tag pego só a tag  
 OBS: necessário instalar para rodar (mesmo já tendo a pasta)  
-PARA GRAVAR TESTE: cypress run --record --key  f46218ff-2d98-4e42-ac0cfc97f1c8b891  
-Cypress framework de testes automatizados  
+PARA GRAVAR TESTE: cypress run --record --key  keyxxxx-xxxx-xxxx-xxxxxxxxxxxxxxx  
 
 - Junta framework, biblioteca pra integração e comunicação  
 - Cypress faz sem o selenium
 
 Cypress **não suporta multiplas abas** (alguns testes são rodados com algumas abas)  
 Time Reckets - usar o protec (conseguiram fazer o login por request)  
-POC Cypress: Regra de cobrança, Faturamento, Boleto;  
 Desenhar fluxo do workflow no Cypress (tem suporte pra action de mouse) 
 
 - Comunidade está muito ativa  
@@ -54,7 +56,7 @@ https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-a
 Extensão: Cypress.helper -- VSCode  
 
 > Selenium: wait (ou sleep) MUITO usado  
-> Cypress: ele mesmo consegue esperar requisição, etc (foi desenv em cima das dificuldades do selenium)
+> Cypress: ele mesmo consegue esperar requisição, etc (foi desenvolvido em cima das dificuldades do selenium)
 
 Debug Cypress: traz todas as requisições, todas as ações - vejo exatamente qual requisição esta falhando, onde falhou ele grava todos os testes, que falharam e passaram  
 Cypress aceita *TypeSript* e *JavaSrcript*  
@@ -62,11 +64,7 @@ Cypress aceita *TypeSript* e *JavaSrcript*
 - *Typescript* tem tipos (tipo num, array, string)
 - *JavaScript* aceita tudo na declaração da variavel (pode bagunçar mas facilita)
 
-Trazer vanagens do Cypress vs Selenium  
-Cypress é todo free mas a execução paralela FREE só 400 testes por mês
-(precisaremos pagar)  
-
-- Comparativo entre as regressões (sem POC nao da)
+- Comparativo entre as regressões
 - Positivos e negativos
 - Custos
 
@@ -77,4 +75,8 @@ ambiente de testes
 chego na pipeline: quero executar 200 testes em paralelo  
 ele gera maquina (linux)  
 tenho tudo do selenium grid NO oks  
-aerofunction (node.js) - passa só o parenteses  
+aerofunction (node.js) - passa só o parenteses
+
+## Course **Testes de aplicações modernas com Cypress**
+
+[Udemy Course](https://www.udemy.com/course/testes-cypress/)

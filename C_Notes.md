@@ -26,6 +26,7 @@ Declaring variables os value type (int) have pre set size, or pre allocated (Sta
 References have dinamic memory allocation
 
 ### Interfaces
+
 I want a class to have some of the methods from another class, but not all.  
 CAN inherit from 1 class, and from multiple interfaces  
 - Inherit from interface is restricting the definition of the class that uses the interface  
@@ -37,19 +38,23 @@ So I can have diferent types of objects through an Interface (and other methods 
 Interfaces can't have implemented functions
 Abstract class is a mix of regular classes and interfaces. 
 
-ANONYMOUS DATA  
+### Anonymous Data
+
 Good for non SQL databases  
 Allow to create an object without creating a class for that obj  
 var someObj = new { name = "alex", age = 54 };  
 
-LAMBDA EXPRESSIONS  
+### Lambda Expressions
+
 (student) => { return (student.Name == "Jim"); }  
 Function have no name  
 
-ASYNCHRONOUS CODE  
+### Asynchronous Code
+
 Methods work on separate threads  
 
-STRING INTERPOLATION  
+### String Interpolation
+
 Add $ in front of string  
 > $"Mensagem: {msg}"  
 
