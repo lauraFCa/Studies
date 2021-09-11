@@ -1,16 +1,16 @@
-<h1>Python na Pratica</h1>
-<h3>Projetinhos do Programação Dinâmica (youtube)</h3>
-<ol>
-  <li>Organizar arquivos em pastas a partir da extensão</li>
-  <li>Baixar vários arquivos de uma vez</li>
-  <li>Reduzir tamanho de imagem</li>
-</ol>
-<br><br><br>
-<p><b>Projetinhos.py</b>
-<ul>
-<li>Simulador de Dado</li>
-<li>Numeros Aleatorios</li>
-<li>Responder Perguntas (Decida por Mim)</li>
-<li>Jogo de Decisões</li>
-</ul>
-</p>
+# Python na Pratica
+
+[Canal YT -  Programação Dinâmica](https://www.youtube.com/c/Programa%C3%A7%C3%A3oDin%C3%A2mica)
+
+- Organizar arquivos em pastas a partir da extensão
+- Baixar vários arquivos de uma vez
+- Reduzir tamanho de imagem
+
+<br>
+
+Projetinhos.py
+
+- Simulador de Dado
+- Numeros Aleatorios
+- Responder Perguntas (Decida por Mim)
+- Jogo de Decisões
