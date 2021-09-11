@@ -1,4 +1,4 @@
-# Conteudos em Pytohn
+# Python
 
 ## Django
 
