@@ -1,5 +1,69 @@
 # Couses
 
+## Course **HTTP Essential Training**
+
+[Linkedin learning course](https://www.linkedin.com/learning/http-essential-training/)  
+URL = Universal Resource Locator  
+https:// => Protocol  
+linkedin.com => Host  
+learning/course-name/chapter => Resource path  
+?u=123456 => URL query (optional)  
+PATH: modify resource (can carry instructions on how to modify data) - not necessarily replacing it  
+PUT: update resource (replace content)  
+Status codes: 100 = information; 200 = successful; 300 = redirection; 400 = client error; 500 = server error  
+Header request:
+
+- User-agent: requester id => how API knows wich browser is beign used (ex: Mozzilla/5.0)
+- Accept: file types, language types and enconding types accepted
+- Referer: where the request came from
+- Connection: keep alive = keep alive for future requests
+- Cache-control: set to zero = not gonna be saved when arrives
+- Form submition and media files
+
+Response request:
+
+- Status
+- Server type
+- Date and time
+- Content type
+- Entire payload - html document (link)
+- Host header
+
+**Cookies**: pass states between client and server (set up sessions)  
+The server includes a set cookie response header with a unique token or string of characters in its response and stores that same string in its own database associated with the current logged in user.  
+The browser receives this cookie and keeps it in its memory.
+
+**Caching**: Server and client can ask to cache (*store for later*) files sent through HTTP  
+This files are used instead of new ones  
+Makes loading faster.  
+Done with Cache directives  
+Cache control (store files in the browser to speed up visits):
+
+- max-age=<seconds>  # how long the cache is saved
+- max-stale[=seconds]
+- min-fresh=<seconds>
+- no-cache
+- no-store
+- no-transform
+- only-if-cached
+
+Cache-control:
+
+-must-revalidate
+- no-cache
+- no-store
+- no-transform
+- public
+- private
+- proxy-revalidate
+- max-age=<seconds>
+- s-maxage=<seconds>
+
+> rest.http  
+HEAD http://mor10.com/gutenberg-and-the-future-of-wordpress-conditions-for-success/  
+GET http://mor10.com/gutenberg-and-the-future-of-wordpress-conditions-for-success/  
+*COMMAND >URL<*
+
 ## Course **API Testing Foundation**
 
 [Original Course GitHub](https://github.com/djwester/api-testing-foundations.git)
@@ -370,3 +434,14 @@ Para adicionar o token com a autorização:
 Resposta JSON: data = lista de objetos (entre chaves{})
 
 Posso validar inúmeros fatores na resposta (desde códigos de status, a valores dos parâmetros de objetos, existência de objetos, autorizações para diferentes tokens).
+
+## Introducing Postman
+
+Running an API (on Node folder): *npm run star-win*  
+ps = page size  
+pn = page number  
+
+The values of preset header are copied into the request, not merged:
+
+- Can cause duplicate headers, since they're not replaced
+- Any changes to the preset will not reflect on requests it was applied to
