@@ -75,12 +75,11 @@ estar centralizado em uma delas).
 Mais rápido que MIL e Boosting (propriedades matemáticas tornam rápido e 
 preciso).  
 Depois de você selecionar o ROI, o algoritimo inicializa o filtro de partículas, e 
-gera mais 2 filtros criando 2 novas bounding boxes (externas ao ROI).
-![Algoritmo KCF](imgs/kcf_algorith.png)
+gera mais 2 filtros criando 2 novas bounding boxes (externas ao ROI).  
 Nos frames seguintes atualiza estes filtros, ajustando para contornar melhor o 
 objeto, ajustando a mudanças de escala.
 
-4. CSRT  
+1. CSRT  
 Discriminative Correlation Filter with Channel and Spatial Reliability  
 Cria um mapa de confiabilidade espacial para detectar a região selecionada
 (adequado a objetos não retangulares).  
@@ -191,7 +190,6 @@ H: Matiz, indica direção do movimento do pixel;
 S: Saturação, indica velocidade dos pixels (de um frame a outro);  
 V: Intensidade menor quando o deslocamento é menor (menor saturação)  
 
-![Optical Flow - Sparce](imgs/opticalFlow_Sparce.png)
 *Não analisa imagem pixel a pixel.*
 
 Algoritmo:
