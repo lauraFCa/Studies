@@ -1,6 +1,4 @@
-# Courses
-
-## Course **Learning Selenium**
+# Course **Learning Selenium**
 
 Linkedin Learning Course: [Learning Selenium](https://linkedin.com/learning/learning-selenium/)  
 **Selenium WebDriver 3.0**
@@ -11,7 +9,7 @@ Linkedin Learning Course: [Learning Selenium](https://linkedin.com/learning/lear
 - Open Source
 - Uses client server communication
 
-### WebDriver
+## WebDriver
 
 - WebDriver: Quickly and easily write automated tests;
 - Emulate actions of users (clicking, typing);
@@ -25,7 +23,7 @@ Linkedin Learning Course: [Learning Selenium](https://linkedin.com/learning/lear
 
 geckodriver: browser driver
 
-### Notes on Gems in Ruby
+## Notes on Gems in Ruby
 
 - Gems are independent software packages (like libraries or plugins)
 - RubiGems is the package management framework
@@ -43,7 +41,7 @@ geckodriver: browser driver
    [Selenium classes command lists](https://www.selenium.dev/selenium/docs/api/rb/Selenium/WebDriver/Driver.html)
 3. Close the driver session (quit)
 
-### Know what to automate
+## Know what to automate
 
 - Knowledge of the and functionalities
 - Outline test scenarios (steps to automate)
@@ -51,7 +49,7 @@ geckodriver: browser driver
   - Define the value each scenario will provide
 - Find the web elements needed for testing (locate)
 
-### Assertions
+## Assertions
 
 Are not native, so a library (gem) is needed.
 
@@ -61,7 +59,7 @@ Are not native, so a library (gem) is needed.
 
 \*\*Put geckodriver on the enviromment variables.
 
-### WebDrivers
+## WebDrivers
 
 - ChromeDriver
   - By Google; Webdriver wire protocol for Chromium (android and desktop)
@@ -74,7 +72,7 @@ Are not native, so a library (gem) is needed.
 
 When decidign wich to use, refer to usage data on the app - to define the most commonly used browsers.
 
-### Selenium Grid
+## Selenium Grid
 
 - Proxy server that runs tests against remote browser instances;
 - Distributes tests across several servers;
@@ -116,20 +114,20 @@ The node translate the test script using JSON wire protocol, and rund it remotly
 - When using the grid its either hosted on physical or virtual hosts.
 - Physical server should be hosted for testing only
 
-#### PROS
+## PROS
 
 - Scale: runs many tests on parallel
 - Central way to manage multiple envirements (can run in diferent systems, browsers, etc)
 - Smart: quickly and easily find nodes, and run tests on the approprieted nodes
 
-#### CONS
+## CONS
 
 - Maintenance is required to keep it running
   - Help with maintenance: enable warnings and logs (easy debug), create scripts for common behaviors (start and stop hubs)
 - Performance might start to degrade over time: some nodes may start running extremely slow, there might be still browser windows (not shut down properly)
   - Help with it: explicitly kill browsers after tests, periodically restart grid nodes, restart the server after runs.
 
-### Clean Test Code
+## Clean Test Code
 
 - Readable tests  
 - Minimize lines os codes  (not repeat steps over and over)  
@@ -137,7 +135,7 @@ The node translate the test script using JSON wire protocol, and rund it remotly
   - extract strings into variables  
   - Some actions are repeated, such as finding an element -> send key to the element (break into actions and methods)  
 
-### Page Object Pattern
+## Page Object Pattern
 
 Set classes for each page in the application to model behavior.  
 Each page has test *Selectors* and test *Methods*.  
@@ -145,7 +143,7 @@ In the test a new page object is created and then call that class's methods dire
 **Goals**: Separate *test* and *code* and makes the test more mainteinable! (things are updated at one place only)  
 Ex: "Signup Page" and "User Page": each has its own class.
 
-### Test Organization
+## Test Organization
 
 It's important to be able to know:
 
@@ -159,7 +157,7 @@ It's important to be able to know:
 - Group tests into sub-suits by feature  
 - Document tests with a readme (explain structure and how to run them)  
 
-### Test Pyramid
+## Test Pyramid
 
 Structure tests, different levels of testing and guide coverage.
 
@@ -172,7 +170,7 @@ Structure tests, different levels of testing and guide coverage.
 
 <br>
 
-## Course **Selenium Essential Training**
+# Course **Selenium Essential Training**
 
 Linkedin Learning Course: [Selenium Essential Training](https://www.linkedin.com/learning/selenium-essential-training/)
 
@@ -183,28 +181,28 @@ Linkedin Learning Course: [Selenium Essential Training](https://www.linkedin.com
 Selenium Webdriver uses *Client x Server* communication.  
 For each command in the script, a request is sent to the WebDriver API (REST base service), that interprets the request and the steps are executed in the browser.
 
-### Driver Browsers
+## Driver Browsers
 
-#### ChromeDriver
+## ChromeDriver
 
 - Maintained by Google  
 - Implements WebDriver wire protocol for Chromium
 - Available on Chrome (Android and Desktop)
 
-#### Geckodriver
+## Geckodriver
 
 - WebDriver maintained by Mozilla
 - BWritten in Rust
 - Default for Firefox
 
-#### EdgeDriver
+## EdgeDriver
 
 - Owned by Microsoft
 - Written in C#
 - Support is best in Windows 10
 - It's traditionally slower than others
 
-#### SafariDriver
+## SafariDriver
 
 - Maintained by Apple
 - SafariDriver is included by default (no need for aditional configurations) - Set Sarafi appart from others
@@ -218,7 +216,7 @@ Finding an element on the page:
 - By. Name
 - By.Xpath
 
-### Tools with WebDriver
+## Tools with WebDriver
 
 Use **autocomplete**, with Google Places API.
 
@@ -334,11 +332,11 @@ If is not met, throws an exception
 WebDriverWait wait = new WebDriverWait(driver, 10); //seconds
 WebElement element = wait.until( ExpectedConditions.visibilityOfElementLocated(By.id("idElemento)) );
 
-### Automating a Webpage
+## Automating a Webpage
 
 Filling a form with: inputs, radio buttons, check boxes, dropdowns and date pickers, with a submit button.  
 
-#### **General code**
+## **General code**
 
 System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
 
@@ -376,7 +374,7 @@ assertEquals("The form was successfully submitted!");
 
 <br>
 
-#### **Cleaned up code**
+## **Cleaned up code**
 
 Using **Page Objects** to separate functionalities into different classes.  
 Organize test code and keep it clean.
@@ -433,7 +431,7 @@ Note: WebElements DO NOT need to be explicitly defined before using them in test
 
 <br>
 
-### Project Integration
+## Project Integration
 
 Connect it to *GitHub*, or any other source control repository.  
 

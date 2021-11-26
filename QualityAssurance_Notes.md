@@ -1,6 +1,4 @@
-# Courses
-
-## Course **Agile Testing**
+# Course **Agile Testing**
 
 [Linkedin Learning Course](https://www.linkedin.com/learning/agile-testing-2)
 
@@ -29,7 +27,7 @@ Beggining of a project:
 Skills: comunication, curiosity (desire to explore), attentiveness, active discovery, problem solving, mitigation, creativity and risk assessment.
 **Shift Testing Left - do it earlier**
 
-### Backlog Grooming
+## Backlog Grooming
 
 Meeting held to discuss user stories (or tickets)  
 Meeting often includes POs and stakeholders, it should include QAs  
@@ -49,7 +47,7 @@ Tester can create a loose test plan;
 Ask questions about client, plataform, devices, etc;  
 Tester = Forager
 
-### Sprint Planing
+## Sprint Planing
 
 The team evaluate what lays arread. Assess backlog and define priorities
 
@@ -81,7 +79,7 @@ Analysis in what happened on the sprint
 - What failed
 - What they can improve
 
-### Bug Tracking
+## Bug Tracking
 
 - what is a name convention
 - what is the priority (costly, loss)
@@ -102,7 +100,7 @@ Tools: Google Analytics, Looker, Fabric - percentage of use in brownsers;
 
 - A tester can determine the most important browsers to test / the most used plataforms (devices/operational system)
 
-### Manual Testing
+## Manual Testing
 
 Includes automated process that needs to be executed/stewarded by a person;
 
@@ -111,13 +109,13 @@ Includes automated process that needs to be executed/stewarded by a person;
 - Exploratory Testing: cognitive approach to address software
   - Stretching, moving, trying and shrinking aspects of the application (reveal strenths and weakness of the system)
 
-### Test Automation
+## Test Automation
 
 Series of tests that need to be run in succession at rapid speed, or are redundant / excessive / extreme;  
 Not necessarily tests, but checks! **Ensure all key factors af the app are working**;  
 Loading Testing: understand conditions of software under extreme exposure or visitation
 
-### Continuous Integration
+## Continuous Integration
 
 The practice of regularly pushing code to a shared repository, and runing quality checks on smaller batches of code.  
 Smaller iterations can lead to earlier status updates
@@ -126,7 +124,7 @@ Smaller iterations can lead to earlier status updates
 
 <br>
 
-## Course **Behavior Driven Development (BDD)**
+# Course **Behavior Driven Development (BDD)**
 
 [Linkedin Learning Course](https://www.linkedin.com/learning/behavior-driven-development)
 
@@ -279,11 +277,11 @@ Create steps.rb file, inside step_definitions directory
 
 <br>
 
-## Course **Insights on Software Quality Engineering**
+# Course **Insights on Software Quality Engineering**
 
 [Linkedin Learning Course](https://www.linkedin.com/learning/insights-on-software-quality-engineering)
 
-### QA
+## QA
 
 Be able to break down a problem, and think about the most efficient ways to come to a solution  
 Be able to think about the user, from the moment they start using the product, untill they stop
@@ -291,14 +289,14 @@ Be able to think about the user, from the moment they start using the product, u
 It helps QA people to understand the thought process when the product is still being developed.  
 Being a part of the process from the begining.
 
-### QA + Agile Dev
+## QA + Agile Dev
 
 Greater focus on automation, because the main goal there is feaure development  
 Make sure your core product still works  
 Incorporate QA in the process  
 Strategies to make sure everything has been developed, tested and bug fixed
 
-### QA for different types of applications
+## QA for different types of applications
 
 Mobile apps need to be submited and takes time;  
 Make sure the app is not submitted full of bugs!  
@@ -309,7 +307,7 @@ Its easier to send a hot fix, and address the problem;
 
 <br>
 
-## Notes **Automatização de Testes**
+# Notes **Automatização de Testes**
 
 [Os 15 Erros mais Comuns na Automatização de Testes](https://www.youtube.com/watch?v=k4egg4trjgc&ab_channel=Pagar.meTalks)  
 
@@ -328,11 +326,11 @@ Armadilhas na automação de testes:
 
 2. X
 
-## Course **Introdução ao Teste de Software**
+# Course **Introdução ao Teste de Software**
 
 [Coursera Course](https://www.coursera.org/learn/intro-teste-de-software)
 
-### História do Teste de Software
+## História do Teste de Software
 
 Diferença entre _tirar defeitos_ e _testar software_
 
@@ -353,7 +351,7 @@ Esses erros podem ocorrerr devido a:
 
 É essencial prever ou garantir que falhas não ocorram, ou que _pelo menos sejam minimizadas_ ou identificadas o quanto antes.
 
-### TMMI (Test Maturity Model integration)
+## TMMI (Test Maturity Model integration)
 
 Guia e framework para apoiar a melhoria de processos de teste (criando níveis).  
 Estabelece requisitos necessários para que se tenha um processo de teste com qualidade.
@@ -391,7 +389,7 @@ Referências:
 - [Elaboração de um processo de teste com base em um estudo de caso real](https://repositorio.ufscar.br/handle/ufscar/519)
 - [Characterising the state of the practice in software testing through a TMMi-based process](https://jserd.springeropen.com/articles/10.1186/s40411-015-0019-9)
 
-### Habilidades de um bom profissional de Atividades de Software  
+## Habilidades de um bom profissional de Atividades de Software  
 
 Equipe com metodologia ágil, SCRUM e KANBAN.  
 
@@ -411,11 +409,11 @@ Além disso também deve saber priorizar casos de teste e bugs para que o softwa
 
 > Não existem produtos de qualidade, existem processos com qualidade!
 
-<!-- ### Mapa Conceitual de Teste de Software
+<!-- ## Mapa Conceitual de Teste de Software
 
 ![Teste de Software](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/JQmZ_6SjEeesIgqlslw-IA_879eb74415eff3980e869ed729ac40b7_bf7591e0a4a211e78d872d02aebbf8f7.map.jpg?expiry=1627948800000&hmac=nBT_mnY823kgCpNc2NKq2M8EH8ghForqRNZpKW89Q9k) -->
 
-### Terminologia da Área
+## Terminologia da Área
 
 **Engano**: Ação humana que produz resultado incorreto;  
 **Defeito**: Passo incorreto na definição de dados (bug, erro, defeito);  
@@ -432,7 +430,7 @@ Erro que chegou a saída;
 - Definições nem sempre são seguidas
 - Existem padrões internacionais que coletam e padronizeam a terminologia da área
 
-### Etapas do Teste
+## Etapas do Teste
 
 **1. Planejamento**: Plano de Teste
 
@@ -461,7 +459,7 @@ Erro que chegou a saída;
 
 **Importante:** Verificar documentação para cada etapa (por entidades internacionais)
 
-### Fases da Atividade de Testes
+## Fases da Atividade de Testes
 
 Software confiável porém inseguro - requisitos estavam errados.  
 Existem tipos distintos de *engano* e níveis diferentes de abstração.  
@@ -478,7 +476,7 @@ Feito após manutenções, garantindo que modificações não interferem com o s
 
 *Independente da fase existem etapas para a execução da atividade de teste.*
 
-### Técnicas de Teste
+## Técnicas de Teste
 
 Programa tem um domínio de entrada (todos os valores que podem ser usados para executar o programa).  
 A partir do domínio seleciona um dado de teste e cria caso de teste a partir do domínimo.  
@@ -488,7 +486,7 @@ Verificar se para cada caso de teste a saída obtida é a esperada.
 
 Regras ou Técnicas são usadas para identificar quando dados de teste devem estar no mesmo sub-domínimo ou não.
 
-#### Teste Funcional
+## Teste Funcional
 
 Parte da *especificação do software*.
 
@@ -499,7 +497,7 @@ Parte da *especificação do software*.
 
 Pode ser feito em todas as fases de teste (unidade, integração e sistema)
 
-#### Teste Estrutural
+## Teste Estrutural
 
 Parte do conhecimento da estrutura interna do programa (código).  
 Critérios baseados em:
@@ -510,7 +508,7 @@ Critérios baseados em:
 
 Feito nas fases de teste de unidade e integração.
 
-#### Teste de Defeitos
+## Teste de Defeitos
 
 Parte de defeitos típicos, comumente vistos no sistema.  
 Criar implementações alternativas para que o testador projete casos de teste que revelem os defeitos.
@@ -521,7 +519,7 @@ Criar implementações alternativas para que o testador projete casos de teste q
 
 Feito nas fases de teste de unidade e integração.
 
-### Testes Funcionais
+## Testes Funcionais
 
 **Especificação dos requisitos do Software:**  
 Utilizar o teste funcional para *projetar casos de teste*, *submeter casos no programa* e *verificar se a saída obtida* está de acordo com a saída que era esperada
@@ -549,7 +547,7 @@ Aplicada a todas as fases, pode ser executada manual ou automatizada.
 
 Aplicar critérios para identificar os casos de teste de maior cobertura (melhores)
 
-#### **Particionamento em Classes de Equivalência**
+## **Particionamento em Classes de Equivalência**
 
 Qualquer elemento em um sub-conjunto irá representar o conjunto todos, e será usado para criar um caso de uso.  
 
@@ -589,7 +587,7 @@ Aplicações onde variáveis de entrada são facilmente identificadas
 Reduz domínio de entrada  
 Classes podem ser definidas a partir de diretrizes, considerando condições de entrada
 
-#### **Análise do Valor Limite**
+## **Análise do Valor Limite**
 
 Comlementa o particionamento em classes de equivalência.  
 Dados de teste são selecionados considerando os valores limitantes das classes (máximo e mínimo).
@@ -605,7 +603,7 @@ Funciona junto com as classes de equivalência
 Explora valores nos limites das classes (e valor unitario acima)  
 Diretrizes levam a determinação dos dados de teste
 
-#### **Automatização de Testes Funcionais**
+## **Automatização de Testes Funcionais**
 
 *JUnit:* Framework de teste de unidade para Java.
 
@@ -654,7 +652,7 @@ public void ***testeValido01***() {
 <br>
 @Test  
 public void ***testeInvalido01***() {  
-  ClasseMainDoProjeto.main(new String [] { "###a1" });  
+  ClasseMainDoProjeto.main(new String [] { "##a1" });  
   String output = baOut.toString();  
   assertEquals("Invalido", output)  
 }
@@ -686,7 +684,7 @@ Permite testes funcionais, de regressão e desempenho, e é *opensource*
 Permite integração com várias linguagens e frameworks  
 OBS: Caso de teste não é salvo isoladamente, **necessário salvar a Suite de Testes**
 
-### Testes Estruturais
+## Testes Estruturais
 
 Tem como objetivo garantir que todas as estruturas que compoe o programa estão funcionando.  
 Usa o código do programa para definir os requisitos de teste, e com eles os casos de teste.
@@ -786,7 +784,7 @@ identifier.c identifier.gcno
 GCOVR - Visualizar o resultado  
 gcovr -r . --branches --html --html-details -o identifier.html
 
-### Testes de Mutação
+## Testes de Mutação
 
 Utiliza conhecimento sobre os defeitos típicos que podem ocorrer no programa para criar bons conjuntos de testes.  
 Criamos vários programas que chamamos de **mutantes**  
@@ -841,7 +839,7 @@ Outras ferramentas:
 Se você gerar todos os mutantes, para todas as funções do programa identifier (1245 mutantes) e adicionar os 7 casos de teste do vídeo, quantos mutantes serão mortos e qual será o escore de mutação obtido (sem marcar mutantes equivalentes)?    
 
 
-### Depoimento de QA
+## Depoimento de QA
 
 Depois da reunião de planejamento, começar a escrever os cenários de teste utilizando a metodologia BDD e a linguagem Gherkin.  
 Para ler esses cenários de teste utilizar Python e Selenium, frameworks mais utilizados hoje dia para testes de automação.  

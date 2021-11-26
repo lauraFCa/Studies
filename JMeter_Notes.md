@@ -1,6 +1,4 @@
-# Courses
-
-## Course **JMeter - Step by Step for Beginners**
+# Course **JMeter - Step by Step for Beginners**
 
 [Udemy Course](https://www.udemy.com/course/jmeter-step-by-step-for-beginners/)
 
@@ -29,7 +27,7 @@ OBS: View result in tree takes up a lot of memory
 Graph results: Because of cache, the average will get higher and the throughput will get smaller  
 (Not recommended for heavly loaded performance test - high memory consuming)
 
-### Lesson 01
+## Lesson 01
 
 **Step 1 :** Check java is installed on your system  
 >java -version  
@@ -42,7 +40,7 @@ Graph results: Because of cache, the average will get higher and the throughput 
 **Step 4 :** Start Jmeter  
 > Windows - jmeter/bin - jmeter.bat
 
-### Lesson 02
+## Lesson 02
 
 Step 1 - Start Jmeter  
 Step 2 - Create a TestPlan  
@@ -50,7 +48,7 @@ Step 3 - Create a Thread Group (Users) Step 4 - Add a Sampler (Http)
 Step 5 - Add Listeners  
 Step 6 - To Run the Test
 
-### Lesson 03
+## Lesson 03
 
 Assertions = checks on the Response
 
@@ -61,7 +59,7 @@ Assertions = checks on the Response
 5. XML Assertion
 6. XPATH Assertion
 
-### Lesson 04
+## Lesson 04
 
 Listener = elements that gather information about the performance test  
 Used to view results / metrics of the test  
@@ -75,7 +73,7 @@ Latency = time to first byte
 6. Simple Data Writer
 
 
-## Course **JMeter: Performance and Load Testing**
+# Course **JMeter: Performance and Load Testing**
 
 [Linkedin Learning Course](https://www.linkedin.com/learning/jmeter-performance-and-load-testing/)
 

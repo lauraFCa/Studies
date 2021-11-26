@@ -1,6 +1,4 @@
-# Courses
-
-## Course **Learning C#**
+# Course **Learning C#**
 
 **.NET** = library that works with several languages (just for microsoft plataforms)  
 **.NET Core** = multiplataform (windows, linux, mac)
@@ -25,7 +23,7 @@ Each time we use a new keyword we ocupy memory
 Declaring variables os value type (int) have pre set size, or pre allocated (Stack - simpler memory managment)  
 References have dinamic memory allocation
 
-### Interfaces
+## Interfaces
 
 I want a class to have some of the methods from another class, but not all.  
 CAN inherit from 1 class, and from multiple interfaces  
@@ -38,28 +36,28 @@ So I can have diferent types of objects through an Interface (and other methods 
 Interfaces can't have implemented functions
 Abstract class is a mix of regular classes and interfaces. 
 
-### Anonymous Data
+## Anonymous Data
 
 Good for non SQL databases  
 Allow to create an object without creating a class for that obj  
 var someObj = new { name = "alex", age = 54 };  
 
-### Lambda Expressions
+## Lambda Expressions
 
 (student) => { return (student.Name == "Jim"); }  
 Function have no name  
 
-### Asynchronous Code
+## Asynchronous Code
 
 Methods work on separate threads  
 
-### String Interpolation
+## String Interpolation
 
 Add $ in front of string  
 > $"Mensagem: {msg}"  
 
 <br>
 
-## Course **C++: Orientação a Objetos - Introdução**
+# Course **C++: Orientação a Objetos - Introdução**
 
 //TODO

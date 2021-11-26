@@ -1,6 +1,4 @@
-# Courses
-
-## Course **JavaScript for QA Engineers and SDETs**
+# Course **JavaScript for QA Engineers and SDETs**
 
 [Udemy Course](https://www.udemy.com/course/javascript-for-qa-engineers-and-sdets)
 
@@ -23,7 +21,7 @@ linhas */
 
 <br>
 
-## Course **JavaScript Essencial Training**
+# Course **JavaScript Essencial Training**
 
 [Linkedin Learning Course](https://www.linkedin.com/learning/javascript-essential-training)
 

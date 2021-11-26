@@ -1,6 +1,4 @@
-# Couses
-
-## Course **HTTP Essential Training**
+# Course **HTTP Essential Training**
 
 [Linkedin learning course](https://www.linkedin.com/learning/http-essential-training/)  
 URL = Universal Resource Locator  
@@ -64,7 +62,7 @@ HEAD http://mor10.com/gutenberg-and-the-future-of-wordpress-conditions-for-succe
 GET http://mor10.com/gutenberg-and-the-future-of-wordpress-conditions-for-success/  
 *COMMAND >URL<*
 
-## Course **API Testing Foundation**
+# Course **API Testing Foundation**
 
 [Original Course GitHub](https://github.com/djwester/api-testing-foundations.git)
 [NPM download](https://npmjs.com/get-npm)
@@ -72,7 +70,7 @@ GET http://mor10.com/gutenberg-and-the-future-of-wordpress-conditions-for-succes
 Idempotency: You can repeat the same action over again but it'll always result in the same (state of the holder stay the same) - PUT and DELETE  
 Safety: Action don't affect the state of holder (don't change anything on the server) - GET   
 
-### Types of API
+## Types of API
 - REST  
 Set of principles to make creating API  
 Representation State Tranfer (consistenly apply actions to resources - nouns)  
@@ -98,7 +96,7 @@ App -> Auth -> App -> Web
 *Basic token:* Basic authentication
 *Bearer token:* OAuth authentication
 
-### Examples
+## Examples
 Star Wars API - some examples of request
 people/?search=hidden
 - number of hidden elements
@@ -116,17 +114,17 @@ New > Mockserver
 Create JSON data in text files, and organize into folders that fits the url structure of the API  
 Can just reference them (those JSONs)  
 
-### API Automation
+## API Automation
 Can use API to run test automation  
 Extension of exploratory testing  
 **Exploration:** lays the foundation for the automated test (about understanding what need to be investigated)  
 Automation is based on things that will need to be repeated  
 - Repeat things that don't change (ex: if other APIs are being used)
 
-### Data Driven Testing
+## Data Driven Testing
 Check every endpoint (and combination)  
 How to share data across tests?  
-### Workflow driven
+## Workflow driven
 Series of API calls in sequency, mimiking what a customer might do  
 How to pass data around?  
 
@@ -134,23 +132,23 @@ How to pass data around?
 - Don't automate everything
 - What and Why it's being automated
 
-### **Performance Testing**
+## **Performance Testing**
 API allows you to programatically access a funcionality in the system, given a real life feeling of usage  
 Load testing, Speed testing, Request limit, Itens in a page limit, stress test.
 
-#### Load/Stress test on parts of app
+## Load/Stress test on parts of app
 
 - See what happens when you have a 100 requests on a page
 - Create a POST request with 100 iteration
 
-#### Speed testing
+## Speed testing
 
 - How long it takes for the server to respond
 - Create a POST, send, and check "time" on Postman
 - Can do this request on slow networks to see how it responds.
 - Allows me to find areas to focus on during development
 
-#### Security Testing
+## Security Testing
 
   - Not just authorization and authentication
   - Dont try to implement your own version. Use standart auth protocol
@@ -162,7 +160,7 @@ Load testing, Speed testing, Request limit, Itens in a page limit, stress test.
 *Validation:* check all validation is correctly done!  
 Some attacks just send random inputs to the API, or cycling through known lists of vulnerabilities  
 
-### Testing Microserveces and IoT
+## Testing Microserveces and IoT
 Microserveces are API driven (each microserver is a small part and talk to each other through APIs)  
 IoTs generally don't even have interfaces, so they comunicate through APIs.  
 
@@ -172,9 +170,9 @@ https://github.com/DannyDainton/All-Things-Postman
   
 <br>
   
-## Course **Learning REST APIs**
+# Course **Learning REST APIs**
 
-### **Módulo 01**
+## **Módulo 01**
 
 Representational State Transfer REST  
 group of software architecture design constrains that brings efficient, reliable and scalable systems  
@@ -227,7 +225,7 @@ RestAPI: receive request, process data and send responses
 Most APIs have limits on who can access what  
 Open APIs, a client must autenticate themselfs, and limits are imposed so the user don't overuse the server  
 
-### **Módulo 02**
+## **Módulo 02**
 
 Request: method + URI (PUT + http://site.com)  
 The request shuld include metadata: content type (required for REST API), user agent, language, autentication, cash control  
@@ -278,12 +276,12 @@ Information - 1XX
 - 502 = bad getaway (server receive invalid response from whatever is trying to connect to)
 - 503 = service unavailable (server is overloaded or down)
 
-### **Módulo 03**
+## **Módulo 03**
 
 HEAD http://restful.dev/wp-json/wp/v2/posts  
 Authorization: Basic username password  
 
-### **Módulo 04**
+## **Módulo 04**
 Authorization: NEVER passed as clear text, it's encrypted  
 In the response you can see the allowed methods  
 filtering responses: www.site.com/posts?per_page=1  
@@ -306,7 +304,7 @@ To delete completely, not just put on trash, use ?force=true (WORDPRESS EXEMPLE)
   
 <br>
   
-## Course **Introduction to Web APIs**
+# Course **Introduction to Web APIs**
 
 **Aplication Programming Interface - API**
 
@@ -363,7 +361,7 @@ request.onerror = a way to deal with errors
   
 <br>
 
-## Course **API REST Youtube Course**
+# Course **API REST Youtube Course**
 
 **API = Application Programming Interface**  
 Interface de programação de aplicações, com objetivo de expor um serviço sem que as pessoas que consomem o serviço conheçam sua estrutura (conceito de caixa preta)  
@@ -435,7 +433,7 @@ Resposta JSON: data = lista de objetos (entre chaves{})
 
 Posso validar inúmeros fatores na resposta (desde códigos de status, a valores dos parâmetros de objetos, existência de objetos, autorizações para diferentes tokens).
 
-## Introducing Postman
+# Course **Introducing Postman**
 
 Running an API (on Node folder): *npm run star-win*  
 ps = page size  

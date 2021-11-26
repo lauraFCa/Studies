@@ -1,6 +1,4 @@
-# Courses
-
-## Course **Learning Tracking with OpenCV**
+# Course **Learning Tracking with OpenCV**
 
 Curso: [Rastreamento de Objetos com Python e OpenCV](https://www.udemy.com/course/rastreamento-objetos-python-opencv/)
 
@@ -16,7 +14,7 @@ Curso: [Rastreamento de Objetos com Python e OpenCV](https://www.udemy.com/cours
 - Optical Flow - Dense
 
 ---
-### Rastreamento X Detecção
+## Rastreamento X Detecção
 
 Algoritmo de Rastreamento mais rápidos que de Detecção- as características 
 do objeto já foram definidas Na Detecção é necessário extrair as 
@@ -31,7 +29,7 @@ exemplo, quando ocorre oclusão).
 Rastreamento preserva identidade - possível acompanhar o movimento do 
 objeto (posições passadas)  
 
-### Algoritmos de Rastreamento
+## Algoritmos de Rastreamento
 
 Modelo de Movimento: Prever localização aproximada do objeto no próximo 
 quadro (localização + velocidade nos quadros anteriores)
@@ -41,7 +39,7 @@ Modelo de movimento prevê a localização, de aparência ajusta a estimativa
 (aumenta precisão)
 Maioria dos algoritmos já implementa automaticamente!
 
-### Objetivo do Algoritmo
+## Objetivo do Algoritmo
 
 Classificar região retangular como objeto (ou como plano de fundo)
 Recebe um patch (recursos/informações detalhadas) da imagem, e retorna 
@@ -52,7 +50,7 @@ o objeto e depois rastrear (treinamento em tempo real de execução)
 Aprendizado de Máquina Offline: Treinamento prévio a execução, necessita 
 diversas imagens (Redes neurais)
 
-### Tipos de Algoritmos
+## Tipos de Algoritmos
 
 1. Boosting  
 Baseado no Haarcascade – usa o AdaBoost (arquivos haarcascade)  
@@ -121,7 +119,7 @@ convolução passa para 3 camadas de conexão.
 Retorna o bounding box da localização prevista do objeto.  
 Só pode trabalhar com objetos que já foram treinados.
 
-### Comparativos
+## Comparativos
 
 Algoritmos |  | Comparativos |  |
 -----------|---|--------------|---|
@@ -145,7 +143,7 @@ arquivos.
   Não tem um bom rastreamento para imagens diferentes das do banco de 
 dados caffe – por exemplo é capaz de rastrear mãos, mas não dedos
 
-### Algoritmos Shift e Optical Flow
+## Algoritmos Shift e Optical Flow
 
 **Algoritmo Meanshift**  
 
@@ -214,7 +212,7 @@ Sparce: fornece os vetores de alguns recursos do quadro (alguns pixels);
 Dense: fornece vetores de fluxo de todo o quadro (todos os pixels);  
 Maior movimento, mais intensa a cor (mais próximo);
 
-### **Complementary Info**
+## **Complementary Info**
 
 Algoritmos de rastreamento de objetos
 Material Complementar
@@ -259,7 +257,7 @@ MOSSE
 [Learning to Track at 100 FPS with Deep Regression Networks](http://davheld.github.io/GOTURN/GOTURN.pdf)  
 [VOT 2014 dataset](https://www.votchallenge.net/vot2014/dataset.html)
 
-#### COMPARATIVO ENTRE ALGORITMOS DE RASTREAMENTO IMPLEMENTADOS NO OPENCV
+## COMPARATIVO ENTRE ALGORITMOS DE RASTREAMENTO IMPLEMENTADOS NO OPENCV
 
 [Comparison of tracking algorithms implemented in OpenCV](https://www.matec-conferences.org/articles/matecconf/pdf/2016/39/matecconf_cscc2016_04031.pdf)  
 [Comparing state of the art Region of Interest trackers](https://medium.com/teleidoscope/comparing-state-of-the-art-region-of-interest-trackers-906ba420e80d)  
@@ -297,11 +295,11 @@ FLUXO ÓPTICO ESPARSO E FLUXO ÓPTICO DENSO
 
 <br>
 
-## Curso **Python na Prática**
+# Curso **Python na Prática**
 
 Canal do Youtube: [Programação Dinâmica](https://www.youtube.com/c/Programa%C3%A7%C3%A3oDin%C3%A2mica)  
 
-### Comandos no terminal
+## Comandos no terminal
 
 Pasta atual: pwd (print work directory)  
 Listar componentes da pasta: ls  
@@ -309,7 +307,7 @@ Mudar o diretório: cd [*novo endereço*]
 Voltar um diretório acima: cd ..  
 Tab - permite auto-complete  
 
-### Criando ambiente virtual para Python
+## Criando ambiente virtual para Python
 
 1. Estar no diretório onde se quer criar um venv
 2. python -m venv "nome-ambienteVirtual"
@@ -327,7 +325,7 @@ arquivo = pd.read_csv(caminho)
 **OU** (apenas para windows)  
 caminho-arquivo = PureWindowsPath("../pasta/pasta1", "arquivo.extensao")  
 
-### Organizar arquivos em Python
+## Organizar arquivos em Python
 
 python -m venv "nome-ambienteVirtual"  
 (no terminal - powerShell)  
@@ -345,14 +343,14 @@ Saindo do Python - exit()
 > zip teste.zip arquivo.txt - zipar um arquivo definido  
 > os.system('zip teste.zip arquivo.txt') - dentro do python faço a funçõa do sistema  
   
-### ORGANIZANDO EM PASTAS
+## ORGANIZANDO EM PASTAS
 
 -> organizar.py  
 //TODO
 
 <br>
 
-## Curso **Django**
+# Curso **Django**
 
 Comandos inicais/principais  
 django-admin startproject [nome-projeto]  
@@ -388,9 +386,9 @@ Quando herdo de models.Model, ja vem com managers padrão (operações de banco 
 
 <br>
 
-## Curso **Reconhecimento com OpenCV**
+# Curso **Reconhecimento com OpenCV**
 
-### MODELOS DE DETECÇÃO DE POSICIONAMENTO
+## MODELOS DE DETECÇÃO DE POSICIONAMENTO
 
 Modelos já pré treinados para a detecção dos pontos chave nas pessoas.  
 Utilizam redes neurais convolucionais.  
@@ -446,7 +444,7 @@ OBS: Soft Max - função de ativação usada em redes neurais quando se tem prob
 Modelo MPII - retorna 15 pontos
 Modelo CAFFE - retorna 18 pontos
 
-### MULTIPLOS ESTÁGIOS DE DUAS RAMIFICAÇÕES
+## MULTIPLOS ESTÁGIOS DE DUAS RAMIFICAÇÕES
 
 Ao entrar com a imagem são aplicadas várias camadas de convolução e de pooling.  
 Em seguida, em um primeiro estágio, saem as ramificações, uma para prever mapas de confiança (indicar confiabilidade de cada um dos pontos - cabeça, braço, perna...) e outra para prever mapas de afinidade (associação entre as partes).  
@@ -458,7 +456,7 @@ Ao fim de todos os estágios a saída é a construção da pessoa a partir dos p
 Na saída dos modelos, cada ponto refere-se a uma parte do corpo.  
 Pode se usar os pontos para análise de uma parte única do corpo.
 
-### DETECÇÃO (do corpo ou parte)
+## DETECÇÃO (do corpo ou parte)
 
 Etapa 0: As 10 primeiras camas do VGGnet detectam todos os pontos do modelo (mapa de calor ajuda a definir onde estão as detecções)  
 --detecta todos os pontos  
@@ -467,7 +465,7 @@ Etapa 1: RNC de multiplos estágios de 2 ramos prevê um conjunto de mapas de co
 Etapa 2: Mapas de confinaça e afinidade são analisados por inferência gananciosa para produzir os pontos chave 2D (finais)  
 --define os pontos finais
 
-### MAPAS DE CONFIANÇA E AFINIDADE
+## MAPAS DE CONFIANÇA E AFINIDADE
 
 Método forward: previsão par classe DNN do opencv - retorna matriz 4x4
 - Dimensão 1: ID da imagem (caso mais de uma img)
@@ -484,7 +482,7 @@ Modelo CAFFE prevê conjunto de campos vetoriais 2D de afinidades (PAF) que codi
 
 <br>
 
-## Curso **Processamento de Imagens**
+# Curso **Processamento de Imagens**
 
 Playlista do Youtube Programação Dinâmica: [Processamento de Imagens](https://www.youtube.com/playlist?list=PL5TJqBvpXQv54i_HWjd7s70vbP4Is7sK_)
 
@@ -496,7 +494,7 @@ Usando biblioteca Pillow
 - Image.putpixel((x,x),(r,g,b)) : substituir o valor de cor que está no pixel
 Imagens em PNG resultam em 4 digitos de tupla (R,G,B,opacidade)
 
-### Criando nova imagem do zero
+## Criando nova imagem do zero
 
 Pillow docs -> Image -> New Image  
 Image.new(mode = tipo de sistema de cor (RGB),  
@@ -511,7 +509,7 @@ distancia losango as bordas = 1,7cm
 
 abertura.py
 
-### Cores
+## Cores
 
 Preto e branco ficam com exatamente mesmos valores para RGB  
 
@@ -545,7 +543,7 @@ escala_cinza.py
 utils.py  
 sinteticas.py  
 
-### Filtros de Imagens
+## Filtros de Imagens
 
 - Filtro: transformação UNÁRIA - não pode usar um elemento externo pra fazer modificações (utilza apenas valores que já estão presentes)
 - Filtros convolucionais: Filtros lineares espacialmente invariante (mesmo comportamento em qualquer parte da imagem)
@@ -554,7 +552,7 @@ Regiões mais lisas são de baixa frequência.
 Filtro de borramento é de PASSA-BAIXA (filtra as frequencias altas / detalhes e contornos)  
 Filtro de realce das bordas é de PASSA-ALTA (filtra as regiões homogenias/frequencias baixas)  
 
-#### Filtros Convolucionais
+## Filtros Convolucionais
 
 - Linear: Causa modificação em imagem, que podemos calcular a partir de valores de pixel na região da imagem
 Novo valor do pixel é média ponderada dos pixels no entorno.
@@ -580,11 +578,11 @@ Value
 
 <br>
 
-## Livro **Introdução a Visão Computacional com Python e OpenCV**
+# Livro **Introdução a Visão Computacional com Python e OpenCV**
 
 [**Introdução a Visão Computacional com Python e OpenCV** - *Ricardo Antonello*](https://cv.antonello.com.br/wp-content/uploads/2017/02/Livro-Introdu%C3%A7%C3%A3o-a-Vis%C3%A3o-Computacional-com-Python-e-OpenCV-3.pdf)
 
-### main01
+## main01
 
 - Capitulo 01: Introdução  
 imagem.shape = altura, largura, quantidade de canais de cores
@@ -594,7 +592,7 @@ imagem[altura, largura] = (blue, red, green)
 Slicing: pegar parte da imagem para modificar  
 imagem[150:300, 250:350] = (0, 255, 0)  --> Cria um retangulo verde da linha 150 a 300 nas colunas 250 a 350
 
-### main02
+## main02
 
 - Capitulo 04: Transformações e máscaras  
 Recortar, Redimensionar, Rotacionar  
@@ -604,13 +602,13 @@ Recortar, Redimensionar, Rotacionar
 Preto e branco, Tons de cinza, Lab, HSV  
 É possível separar canais de uma imagem -> cv2.split(imagem)
 
-### main03
+## main03
 
 - Capitulo 06: Histogramas e equalização de imagem  
 **Histograma:** gráfico de colunas ou de linhas que representa a distribuição dos valores dos pixels de uma imagem - a quantidade de pixeis mais claros (próximos de 255) e a quantidade de pixels mais escuros (próximos de 0).  
 **Equalização do histograma:** distribuir de maneira mais uniforme a intensidade dos pixels na imagem.
 
-### main04
+## main04
 
 - Capitulo 07: Suavização de imagens  
 *Smoothing* ou *Blur*  

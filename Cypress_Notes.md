@@ -1,6 +1,4 @@
-# Courses
-
-## General Notes 
+# General Notes 
 
 docs.cypress.io (documentação completa)  
 Cypress framework de testes automatizados  
@@ -77,6 +75,6 @@ ele gera maquina (linux)
 tenho tudo do selenium grid NO oks  
 aerofunction (node.js) - passa só o parenteses
 
-## Course **Testes de aplicações modernas com Cypress**
+# Course **Testes de aplicações modernas com Cypress**
 
 [Udemy Course](https://www.udemy.com/course/testes-cypress/)
