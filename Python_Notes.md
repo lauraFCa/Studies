@@ -76,7 +76,7 @@ Mais rápido que MIL e Boosting (propriedades matemáticas tornam rápido e
 preciso).  
 Depois de você selecionar o ROI, o algoritimo inicializa o filtro de partículas, e 
 gera mais 2 filtros criando 2 novas bounding boxes (externas ao ROI).
-![Algoritmo KCF](imgs\kcf_algorith.png)
+![Algoritmo KCF](imgs/kcf_algorith.png)
 Nos frames seguintes atualiza estes filtros, ajustando para contornar melhor o 
 objeto, ajustando a mudanças de escala.
 
@@ -191,7 +191,7 @@ H: Matiz, indica direção do movimento do pixel;
 S: Saturação, indica velocidade dos pixels (de um frame a outro);  
 V: Intensidade menor quando o deslocamento é menor (menor saturação)  
 
-![Optical Flow - Sparce](imgs\opticalFlow_Sparce.png)
+![Optical Flow - Sparce](imgs/opticalFlow_Sparce.png)
 *Não analisa imagem pixel a pixel.*
 
 Algoritmo:
@@ -299,7 +299,7 @@ FLUXO ÓPTICO ESPARSO E FLUXO ÓPTICO DENSO
 
 <br>
 
-## Course **Python na Prática**
+## Curso **Python na Prática**
 
 Canal do Youtube: [Programação Dinâmica](https://www.youtube.com/c/Programa%C3%A7%C3%A3oDin%C3%A2mica)  
 
@@ -354,7 +354,7 @@ Saindo do Python - exit()
 
 <br>
 
-## Course **Django**
+## Curso **Django**
 
 Comandos inicais/principais  
 django-admin startproject [nome-projeto]  
@@ -390,7 +390,7 @@ Quando herdo de models.Model, ja vem com managers padrão (operações de banco 
 
 <br>
 
-## Course **Reconhecimento com OpenCV**
+## Curso **Reconhecimento com OpenCV**
 
 ### MODELOS DE DETECÇÃO DE POSICIONAMENTO
 
@@ -486,7 +486,7 @@ Modelo CAFFE prevê conjunto de campos vetoriais 2D de afinidades (PAF) que codi
 
 <br>
 
-## Course **Processamento de Imagens**
+## Curso **Processamento de Imagens**
 
 Playlista do Youtube Programação Dinâmica: [Processamento de Imagens](https://www.youtube.com/playlist?list=PL5TJqBvpXQv54i_HWjd7s70vbP4Is7sK_)
 
