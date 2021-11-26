@@ -183,26 +183,26 @@ For each command in the script, a request is sent to the WebDriver API (REST bas
 
 ## Driver Browsers
 
-## ChromeDriver
+### ChromeDriver
 
 - Maintained by Google  
 - Implements WebDriver wire protocol for Chromium
 - Available on Chrome (Android and Desktop)
 
-## Geckodriver
+### Geckodriver
 
 - WebDriver maintained by Mozilla
 - BWritten in Rust
 - Default for Firefox
 
-## EdgeDriver
+### EdgeDriver
 
 - Owned by Microsoft
 - Written in C#
 - Support is best in Windows 10
 - It's traditionally slower than others
 
-## SafariDriver
+### SafariDriver
 
 - Maintained by Apple
 - SafariDriver is included by default (no need for aditional configurations) - Set Sarafi appart from others
@@ -336,7 +336,7 @@ WebElement element = wait.until( ExpectedConditions.visibilityOfElementLocated(B
 
 Filling a form with: inputs, radio buttons, check boxes, dropdowns and date pickers, with a submit button.  
 
-## **General code**
+### **General code**
 
 System.setProperty("webdriver.chrome.driver", "/Users/meaghanlewis/Downloads/chromedriver");
 
@@ -374,7 +374,7 @@ assertEquals("The form was successfully submitted!");
 
 <br>
 
-## **Cleaned up code**
+### **Cleaned up code**
 
 Using **Page Objects** to separate functionalities into different classes.  
 Organize test code and keep it clean.
