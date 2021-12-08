@@ -53,8 +53,9 @@ Linkedin Learning Course: [Selenium Essential Training](https://www.linkedin.com
 
 ## Python
 
-Directory with information about:
-- Image Processing
-- Object Tracking
-- Small "getting used to" projects
-- Accessing data
+Youtube: [Programação Dinâmica](https://www.youtube.com/c/ProgramaçãoDinâmica)  
+Udemy Course: [Rastreamento de Objetos com Python e OpenCV](https://www.udemy.com/course/rastreamento-objetos-python-opencv/)  
+Udemy Course: [Django 2.0 - Aprendendo os Conceitos Fundamentais](https://www.youtube.com/c/ProgramaçãoDinâmica)  
+Udemy Course: [Reconhecimento de Gestos e Ações com Python e OpenCV](https://www.udemy.com/course/reconhecimento-gestos-acoes-python-opencv/)  
+Youtube: [Processamento de Imagens](https://www.youtube.com/playlist?list=PL5TJqBvpXQv54i_HWjd7s70vbP4Is7sK_)  
+Livro: [Introdução a Visão Computacional com Python e OpenCV](https://cv.antonello.com.br/wp-content/uploads/2017/02/Livro-Introdução-a-Visão-Computacional-com-Python-e-OpenCV-3.pdf)
