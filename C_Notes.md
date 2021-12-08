@@ -58,6 +58,4 @@ Add $ in front of string
 
 <br>
 
-# Course **C++: Orientação a Objetos - Introdução**
-
-//TODO
+<!-- # Course **C++: Orientação a Objetos - Introdução** -->
