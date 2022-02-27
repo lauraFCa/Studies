@@ -86,8 +86,9 @@ OU
 
     robot -d pastaResults pasta/arquivoEspecifico.robot
 
-![Robot - Exemplo de Log](imgs/RobotexLog.png)
-
+Exemplo de Log:  
+![Robot - Exemplo de Log](imgs/RobotexLog.png)  
+Exemplo de Report:  
 ![Robot - Exemplo de Report](imgs/RobotexReport.png)
 
 > robot -d resultsAPI .
