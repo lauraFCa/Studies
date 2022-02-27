@@ -57,3 +57,7 @@ Udemy Course: [Django 2.0 - Aprendendo os Conceitos Fundamentais](https://www.yo
 Udemy Course: [Reconhecimento de Gestos e Ações com Python e OpenCV](https://www.udemy.com/course/reconhecimento-gestos-acoes-python-opencv/)  
 Youtube: [Processamento de Imagens](https://www.youtube.com/playlist?list=PL5TJqBvpXQv54i_HWjd7s70vbP4Is7sK_)  
 Livro: [Introdução a Visão Computacional com Python e OpenCV](https://cv.antonello.com.br/wp-content/uploads/2017/02/Livro-Introdução-a-Visão-Computacional-com-Python-e-OpenCV-3.pdf)
+
+## Robot Framework
+
+Udemy: [Automação de Testes com Robot Framework - Básico](https://www.udemy.com/course/automacao-de-testes-com-robot-framework-basico/)
