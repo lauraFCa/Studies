@@ -109,6 +109,39 @@ Abstração de um script em Python (com Selenium WebDriver):
 - Sequencia de *keywords* pode se tornar a documentação;
 - Bom para testadores não técnicos;
 
-## Librarires
+Libraries usadas:  
+Acessar em [RobotFramework](https://robotframework.org/#libraries)  
 
-Acessar em [RobotFramework](https://robotframework.org/#libraries)
+Instalar - [Selenium Library](https://github.com/robotframework/SeleniumLibrary/#installation)  
+[SeleniumLibrary Keywords](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html)
+
+Instalar - [API Library - *Requests*](https://github.com/MarketSquare/robotframework-requests#install-stable-version)
+
+**Suite de Testes**: Todo o arquivo com todos os Test Cases.
+
+**Setttings**: Configuração da Suite
+
+- Documentation (keyword)
+- Test Setup (keyword) *antes de cada teste*
+- Test Teardown (keyword) *após cada teste*
+
+> taskkill /im chromedriver.exe /f  
+
+Extensão do Chrome: [TruePath](https://qaworld.ga/truepath/)
+
+Executar apenas um teste (um caso de teste):  
+> robot -t "Titulo do caso de teste" nomeDoArquivo.robot
+
+Ajuda do Robot:  
+> robot --help
+
+Executando com base em Tags
+
+Executa apenas testes com a tag:  
+> robot -i nomeTag nomedoArquivo.robot
+
+Executa todos os testes exceto com a tag:
+> robot -e nomeTag nomedoArquivo.robot
+
+Substituir valor de uma variavel global:  
+> robot -v VARIAVEL:valor nomedoArquivo.robot
