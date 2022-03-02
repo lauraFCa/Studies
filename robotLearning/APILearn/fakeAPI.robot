@@ -15,3 +15,6 @@ Requisitar um livro especifico (GET um livro)
     Conferir o status code    200
     Conferir o reason    OK
     Conferir dados do livro "20"
+
+Adicionar um livro
+    Cadastrar um novo livro
