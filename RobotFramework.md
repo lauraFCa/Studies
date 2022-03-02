@@ -125,7 +125,7 @@ Instalar - [API Library - *Requests*](https://github.com/MarketSquare/robotframe
 - Test Setup (keyword) *antes de cada teste*
 - Test Teardown (keyword) *após cada teste*
 
-> taskkill /im chromedriver.exe /f  
+> taskkill /im chromedriver.exe /f
 
 Extensão do Chrome: [TruePath](https://qaworld.ga/truepath/)
 
