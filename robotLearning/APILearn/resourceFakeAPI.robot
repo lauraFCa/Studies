@@ -12,10 +12,6 @@ ${ALIAS}      fakeAPI
 ...           excerpt=Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n
 ...           publishDate=2022-02-15T11:31:31.015427+00:00
 
-&{BOOK_POST}    title=Titulo do livro
-...             description=descricao do livro ou qqr coisa acentuação
-...             excerpt=Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem hehe
-
 *** Keywords ***
 ### SETUPS e TEARDOWS
 Conectar minha API
@@ -54,12 +50,4 @@ Conferir dados do livro "${LIVRO_ID}"
     Should Not Be Empty    ${RESPOTA.json()["excerpt"]}
     Should Not Be Empty    ${RESPOTA.json()["publishDate"]}
 
-
-Cadastrar um novo livro
-    ${HEADERS}    Create Dictionary    content-type=application/json
-    ${RESPOSTA}    POST On Session    ${ALIAS}    Books
-    ...                               data={${HEADERS}}    # pode ser necessario add o json diretamente aqui
-    ...                               headers={&{BOOK_POST}}
-    Log    ${RESPOSTA.text}
-    Set Test Variable    ${RESPOSTA}
 
