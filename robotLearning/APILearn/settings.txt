@@ -1,0 +1,89 @@
+{
+    "workbench.colorTheme": "Dracula Soft",
+    "todo-tree.tree.expanded": true,
+    "todo-tree.general.tags": [
+        "BUG",
+        "FIXME",
+        "TODO",
+        "WARNING",
+        "IMPROVE",
+        "XXX",
+        "[ ]",
+        "[X]",
+        "[x]"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "[ ]": {
+            "foreground": "#e7e7e7",
+            "background": "#ff000080"
+        },
+        "[X]": {
+            "icon": "heart",
+            "fontWeight": "bold",
+            "foreground": "#00a800",
+            "background": "#888888"
+        },
+        "[x]": {
+            "icon": "heart",
+            "fontWeight": "bold",
+            "foreground": "#00a800",
+            "background": "#888888"
+        },
+        "BUG": {
+            "icon": "bug",
+            "foreground": "#c77070",
+            "background": "#000000"
+        },
+        "FIXME": {
+            "icon": "flame",
+            "foreground": "#c43737",
+            "background": "#000000"
+        },
+        "TODO": {
+            "fontWeight": "bold",
+            "icon": "circle-slash",
+            "foreground": "#0028ad",
+            "background": "#ffffff"
+        },
+        "WARNING": {
+            "icon": "alert",
+            "foreground": "#CCAD00",
+            "background": "#000000"
+        },
+        "IMPROVE": {
+            "icon": "beaker",
+            "foreground": "#00c281",
+            "background": "#000000"
+        }
+    },
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.07)",
+        "rgba(127,255,127,0.07)",
+        "rgba(255,127,255,0.07)",
+        "rgba(79,236,236,0.07)"
+    ],
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "dotnet": {
+        "dotnet-test-explorer.autoExpandTree": false,
+        "dotnet-test-explorer.autoWatch": false,
+        "dotnet-test-explorer.enableTelemetry": false,
+        "dotnet-test-explorer.runInParallel": false,
+        "dotnet-test-explorer.treeMode": "full",
+        "dotnet-test-explorer.pathForResultFile": "",
+    },
+    "tabnine.experimentalAutoImports": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "robot.language-server.python": "C:\\Python310\\python.exe",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false
+}
