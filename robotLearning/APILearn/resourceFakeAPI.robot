@@ -11,6 +11,13 @@ ${ALIAS}      fakeAPI
 ...           pageCount=1500
 ...           excerpt=Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n
 ...           publishDate=2022-02-15T11:31:31.015427+00:00
+${json_string}    {
+...                  "id": "10",
+...                  "title": "New Book",
+...                  "description": "Descricao alguma - Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem."
+...                  "excerpt": "Excerpt Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem."
+...                  "publishDate": 2022-03-05T11:31:31.015427+00:00
+...               }
 
 *** Keywords ***
 ### SETUPS e TEARDOWS
@@ -21,7 +28,7 @@ Conectar minha API
 ### ACTIONS
 Requisitar todos os livros
     ${RESPOSTA}    GET On Session    ${ALIAS}    Books
-    Log    ${RESPOSTA.text}    # text -> simplifica leitura no Loh.html
+    Log    ${RESPOSTA.text}    # text -> simplifica leitura no Log.html
     Set Test Variable    ${RESPOSTA}
 
 Conferir o status code
@@ -41,7 +48,7 @@ Requisitar o livro "${LIVRO_ID}"
     Set Test Variable    ${RESPOSTA}
 
 Conferir dados do livro "${LIVRO_ID}"
-    #   API esta mandando alguns campos com valor aleatorio aleatorio entao nao e possivel validar individualmente
+    #   API esta mandando alguns campos com valor aleatorio entao nao e possivel validar individualmente
     Dictionary Should Contain Item    ${RESPOTA.json()}    "{LIVRO_ID}"    ${BOOK_15.id}
     Dictionary Should Contain Item    ${RESPOTA.json()}    title    ${BOOK_15.title}
     Dictionary Should Contain Item    ${RESPOTA.json()}    pageCount    ${BOOK_15.pageCount}
@@ -49,5 +56,14 @@ Conferir dados do livro "${LIVRO_ID}"
     Should Not Be Empty    ${RESPOTA.json()["description"]}
     Should Not Be Empty    ${RESPOTA.json()["excerpt"]}
     Should Not Be Empty    ${RESPOTA.json()["publishDate"]}
+
+Incluir um livro
+    # 1. Convert the JSON string to a dictionary
+    ${json}    Evaluate     json.loads('''${json_string}''')    json
+    # 2. Modify the dictionary
+    # Set To Dictionary    ${json["campo"]}    dp=Novo valor do Campo
+    Set To Dictionary    ${json["excerpt"]}    dp=Novo excerpt - curtinho.\nAlgum novo valor sem os lorem.
+    # 3. Convert the dictionary back to json
+    ${json_string}    Evaluate    json.dumps(${json})    json
 
 
