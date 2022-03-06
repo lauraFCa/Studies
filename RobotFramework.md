@@ -34,7 +34,7 @@ Robot Framework is open and extensible, can be integrated with virtually any oth
   Robot framework test data defined in different sections.
 
     1ª. Settings
-        Importing resource file librarires, variable files and defining mtadata for test cases and test suits;  
+        Importing resource file librarires, variable files and defining metadata for test cases and test suits;  
     2ª. Variables
     3ª. Test Cases
     4ª. Pass
