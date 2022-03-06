@@ -11,9 +11,11 @@ ${ALIAS}      fakeAPI
 ...           pageCount=1500
 ...           excerpt=Lorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem. Lorem lorem lorem. Lorem lorem lorem.\n
 ...           publishDate=2022-02-15T11:31:31.015427+00:00
+# Criando dictionaries com o igual (=) não colocar espaço depois do igual!!
 ${json_string}    {
 ...                  "id": "10",
 ...                  "title": "New Book",
+...                  "pagrCount": "200"
 ...                  "description": "Descricao alguma - Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem."
 ...                  "excerpt": "Excerpt Lorem lorem lorem. Lorem lorem lorem.\nLorem lorem lorem."
 ...                  "publishDate": 2022-03-05T11:31:31.015427+00:00
@@ -56,6 +58,16 @@ Conferir dados do livro "${LIVRO_ID}"
     Should Not Be Empty    ${RESPOTA.json()["description"]}
     Should Not Be Empty    ${RESPOTA.json()["excerpt"]}
     Should Not Be Empty    ${RESPOTA.json()["publishDate"]}
+
+Cadastrar um novo livro
+    ${HEADERS}    Create Dictionary    content-type=application/json
+    ${RESPOSTA}    POST On Session    ${ALIAS}    Books    
+    ...                               data={${json_string}}
+    ...                               headers={${HEADERS}}
+    Log    ${RESPOSTA.text}
+    Set Test Variable    ${RESPOSTA}
+
+
 
 Incluir um livro
     # 1. Convert the JSON string to a dictionary

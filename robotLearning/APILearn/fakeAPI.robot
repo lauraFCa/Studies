@@ -16,27 +16,5 @@ Requisitar um livro especifico (GET um livro)
     Conferir o reason    OK
     Conferir dados do livro "20"
 
-
-
-Example - Editar corpo de um JSON passado
-    ${json_string}    Catenate
-    ...    {
-    ...        "p": "10",
-    ...        "v": 100,
-    ...        "vt": {
-    ...            "dp": "Field to be edited"
-    ...        }
-    ...    }
-
-    Log to console    \nOriginal JSON:\n${json_string}
-    ${newJSON}    Alterar corpo de um json    ${json_string}    vt    the new value
-    Log to console    \nNew JSON string:\n${newJSON}
-
-
-*** Keywords ***
-Alterar corpo de um json
-    [Arguments]    ${jsonOriginal}    ${parametroAlterar}    ${novoValor}
-    ${json}    Evaluate    json.loads('''${jsonOriginal}''')    json
-    Set to Dictionary    ${json["${parametroAlterar}"]}    dp=${novoValor}
-    ${novoJson}    Evaluate    json.dumps(${json})    json
-    [Return]    ${novoJson}
+Incluir um novo livro
+    Cadastrar um novo livro
