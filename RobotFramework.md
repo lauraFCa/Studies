@@ -36,15 +36,11 @@ Estrutura do Robot
 Documentation    Descrição deste arquivo (ou desta Suite de testes)
 
 Library    RequestsLibrary    # biblioteca para realizar os requests da API
-
 Library    Collections    # biblioteca que permite as validações em JSON
 
 Suite Setup       Ação que será executada antes de toda a classe de testes
-
 Suite Teardown    Ação que será executada ao final de toda a classe de testes
-
 Test Setup        Ação que será executada antes de cada um dos testes
-
 Test Teardown     Ação que será executada ao final de cada um dos testes
 
 *** Variables ***
