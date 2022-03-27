@@ -8,8 +8,8 @@ Pré-requisitos
 
 1.  Instalar [Python](https://www.google.com/url?q=https://www.python.org/downloads/&sa=D&source=editors&ust=1648407329979830&usg=AOvVaw2N9XOfgzacjGWgWqut4wAO)
 
-2.  Adicionar às variáveis de ambiente
-    ![](https://docs.blender.org/manual/pt/dev/_images/about_contribute_install_windows_installer.png)
+2.  Adicionar às variáveis de ambiente  
+    ![Example](https://docs.blender.org/manual/pt/dev/_images/about_contribute_install_windows_installer.png)
 
 3.  Sugestão: criar um [ambiente virtual](https://www.google.com/url?q=https://youtu.be/Yp9EWlKfyqc&sa=D&source=editors&ust=1648407329980153&usg=AOvVaw3MPoOdsRveO4iZ07wbW_-_)
 
@@ -25,9 +25,10 @@ Pré-requisitos
 
 Estrutura do Robot
 
-*   Arquivo dividido em seções: Settings, Variables, Test Cases e Keywords;
-*   Keywords são os métodos criados para execução dos testes;
+*   Arquivo dividido em seções: **Settings**, **Variables**, **Test Cases** e **Keywords**;
+*   *Keywords* são os "métodos" criados para execução dos testes;
 *   Baseia-se totalmente no espaçamento: sempre dar um mínimo de dois espaços entre os argumentos;
+
 
 ```
 *** Settings ***
@@ -53,79 +54,56 @@ ${VARIAVEL}    Valor da variável
 *** Test Cases ***
 
 Caso de teste 01
-
     [Documentation]    Descrição do método
-
     [Tags]    tag1    tag2    Incluir
-
     Primeira ação a ser executada    ${VARIAVEL}    # variável de input para o teste
-
     Segunda ação a ser executada
 
+
 Caso de teste 01
-
     [Documentation]    Descrição do método
-
     [Tags]    tag1    Excluir
-
     Primeira outra ação a ser executada
+    Segunda ação a ser executada
 
-    Segunda ação a ser executada    # mesma para ambos os testes
 
 *** Keywords ***
 
 # SETUPS E TEARDOWS
 
 Ação que será executada antes de toda a classe de testes
-
     [Documentation]    Descrição da keyword (método)
-
-    Log    Este é o Suite Setup
-
+    Log    Este é o Suite Setup    # printa o valor no Log de execução do Robot
     Create Session    ${ALIAS}    https://endpoint.com
 
 Ação que será executada ao final de toda a classe de testes
-
     [Documentation]    Descrição da keyword (método)
-
     Log    Este é o Suite Teardown
-
     Delete All Sessions
 
 Ação que será executada antes de cada um dos testes
-
     [Documentation]    Descrição da keyword (método)
-
-    Log    Este é o Test Setup    # printa o valor no Log de execução do Robot
+    Log    Este é o Test Setup
 
 Ação que será executada ao final de cada um dos testes
-
     [Documentation]    Descrição da keyword (método)
-
     Log    Este é o Test Teardown
+
 
 # METODOS
 
 Primeira ação a ser executada
-
     [Documentation]    Descrição da keyword (método)
-
     [Arguments]    ${parametro}
-
     Log to Console    ${parametro}    #printa o valor no terminal
 
 Segunda ação a ser executada
-
     [Documentation]    Descrição da keyword (método)
-
     ${RESPOSTA}        GET On Session    ${ALIAS}    Books    # GET na sessão criada previamente, no endpoint https://endpoint.com/Books
-
-    # resposta do GET salva na variável ${RESPOSTA}
+    # resposta do GET é salva na variável ${RESPOSTA}
 
 Primeira outra ação a ser executada
-
     [Documentation]    Descrição da keyword (método)
-
     Log    \nOutra ação
 
 ```
