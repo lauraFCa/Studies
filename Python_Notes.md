@@ -578,6 +578,62 @@ Value
 
 <br>
 
+# Aplicativo Android com Python
+
+[Kivy Course - Create Python Games and Mobile Apps](https://youtu.be/l8Imtec4ReQ)
+
+Entradas  
+- Título ("alongar", "beber agua", "checar email")
+- Período (de quanto em quanto tempo terá notificação)
+- Repetir (diário, dia de semana, dias específicos) [difíiiicil]
+- Horário inicial (primeira notificação)
+- Horário final (prazo para última notificação)
+
+![Exemplo Codigo de BoxLayout e Saída](imgs/exemploAppLayout.png)
+
+_main.py_  
+´´´
+import kivy
+import time
+import random
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+# print("Versao Kivy = ", kivy.__version__) # 2.0.0
+
+kivy.require('1.9.1')  # para funcionar com versoes do android
+
+
+# generate random numbers and translate to UI
+class MyRoot(BoxLayout):
+    def __init__(self):
+        super(MyRoot, self).__init__()
+
+    def generate_number(self):
+        # especificar o label que vai receber esse valor
+        # neecssario defnir IDs nos labels
+        self.random_label.text = str(random.randint(0, 1000))
+
+
+class Aplicativo(App):
+    def build(self):
+        '''Function to return the UI
+
+        Returns:
+            [string]: [UI central Label]
+        '''
+        return MyRoot()
+
+
+if __name__ == '__main__':
+    app = Aplicativo()
+    app.run()
+
+´´´
+
+>Note: Para conveter em _.apk_ utilizei o Google Collab
+
+<br>
+
 # Livro **Introdução a Visão Computacional com Python e OpenCV**
 
 [**Introdução a Visão Computacional com Python e OpenCV** - *Ricardo Antonello*](https://cv.antonello.com.br/wp-content/uploads/2017/02/Livro-Introdu%C3%A7%C3%A3o-a-Vis%C3%A3o-Computacional-com-Python-e-OpenCV-3.pdf)
