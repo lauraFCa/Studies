@@ -591,8 +591,11 @@ Entradas
 
 ![Exemplo Codigo de BoxLayout e Saída](imgs/exemploAppLayout.png)
 
+<br>
+
 _main.py_  
-´´´
+
+```
 import kivy
 import time
 import random
@@ -601,7 +604,6 @@ from kivy.uix.boxlayout import BoxLayout
 # print("Versao Kivy = ", kivy.__version__) # 2.0.0
 
 kivy.require('1.9.1')  # para funcionar com versoes do android
-
 
 # generate random numbers and translate to UI
 class MyRoot(BoxLayout):
@@ -628,7 +630,7 @@ if __name__ == '__main__':
     app = Aplicativo()
     app.run()
 
-´´´
+```
 
 >Note: Para conveter em _.apk_ utilizei o Google Collab
 
