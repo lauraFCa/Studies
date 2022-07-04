@@ -1,7 +1,5 @@
-Ex_Files_Introducing_Postman/*
-Learning
-package.json
 package-lock.json
 */venv/*
 */*/__pycache__/*
 */__pycache__/*
+*/node_modules
